@@ -11,7 +11,7 @@
 }
 
 .Intro {
-    height: 100%;
+    height: 70vh;
 }
 
 .main-intro {
@@ -22,15 +22,16 @@
 }
 
 .main-intro-title {
-    font-weight: 1000;
     font-size: 10vmin;
 }
 
 .image-body {
     position: absolute;
-    margin-top: -70vmin;
+    margin-top: -95vmin;
     z-index: -1;
     margin-left: 15vmin;
+    animation-name: top;
+    transition-duration: 2s;
 }
 
 .image-body-two {
@@ -38,8 +39,9 @@
     right: 0;
     z-index: -1;
     top: 0;
-    margin-top: 40vmin;
-    margin-right: -10vmin;
+    margin-top: 30vmin;
+    animation-name: top;
+    transition-duration: 2s;
 }
 
 .full-image-one {
@@ -55,6 +57,15 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+@keyframes top {
+    from {
+        margin-top: -90vmin;
+    }
+    to {
+        margin-top: -70vmin;
+    }
+}
+
 @media only screen and (max-width: 600px) { 
     .main-intro {
         height: 100%;
@@ -64,7 +75,7 @@
     }
     .image-body {
         position: absolute;
-        margin-top: -90vmin;
+        margin-top: -130vmin;
         z-index: -1;
         margin-left: 15vmin;
     }
