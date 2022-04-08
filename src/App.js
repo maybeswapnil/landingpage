@@ -9,7 +9,7 @@ function App() {
   const [spinner,  setSpinner] = useState(true)
 
   useEffect(() => {
-      setTimeout(() => setSpinner(false), 2000)
+      setTimeout(() => setSpinner(false), 1000)
   }, [])
 
   return (
@@ -21,10 +21,9 @@ function App() {
           </div>:
           <>
             <Header />
-             <Intro />
+            <Intro />
           </>
         }
-        
     </div>
   );
 
