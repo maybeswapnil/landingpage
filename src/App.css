@@ -1,38 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+:root {
+  margin: 0;
+  padding: 0;
+  --font-color: black;
+  --font-color-hover: #FF5F00;
+  --background-color: white;
+  --font-style: 'Source Sans Pro', sans-serif;
+  transition-duration: 0.3s;
+}
+
+.spinner-div {
+  margin-top: 30vh;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: var(--font-style);
+  height: 50vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--font-color);
 }
 
-.App-link {
-  color: #61dafb;
+.main-header {
+  font-size: calc(10px + 2vmin);
+  color: var(--font-color);
+  width: 100%;
+  padding-left: 5vmin
+}
+.middle-header {
+  transition-duration: 0.3s;
+  font-size: 2vmin;
+  color: var(--font-color);
+}
+.middle-header-mobile {
+  display: none;
+  transition-duration: 0.3s;
+  font-size: 4vmin;
+  color: var(--font-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.middle-header:hover {
+  font-size: 2vmin;
+  color: var(--font-color-hover);
+}
+
+.middle-header-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1vmin;
+  margin-top: 0.5em;
+  margin-right: 6vmin;
+}
+
+.middle-header-div-moble {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1vmin;
+  margin-top: 0.5em;
+  margin-right: 6vmin;
+}
+
+.mobile-hamburger {
+  display: none;
+  transition-duration: 0.3s;
+  font-size: 4vmin;
+  color: var(--font-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .middle-header-mobile {
+    display: block;
+    margin-top: 10vmin;
+    z-index: 0;
+    color: var(--font-color-hover);
   }
-  to {
-    transform: rotate(360deg);
+  .middle-header-mobile:hover {
+    display: block;
+    margin-top: 10vmin;
+    z-index: 0;
+    color: var(--font-color);
+
+  }
+  
+  .middle-header {
+    display: none;
+    transition-duration: 0.3s;
+    font-size: 2vmin;
+    color: var(--font-color);
+    left: 0;
+  }
+
+  .mobile-hamburger:hover {
+    display: block;
+    transition-duration: 0.3s;
+    font-size: 4vmin;
+    color: var(--font-color);
+  }
+
+  .mobile-hamburger {
+    display: block;
+    transition-duration: 0.3s;
+    font-size: 4vmin;
+    color: var(--font-color-hover);
+    z-index: 2;
+    margin-left: 23vmin;
+  }
+
+  .middle-header-div {
+    display: flex;
+    right: 0;
+    grid-gap: 0vmin;
+    margin-top: 0;
+    margin-right: 0vmin;
+  }
+  .middle-header-div-mobile {
+    text-align: right;
+    padding: 0;
+    right: 0;
+    position: absolute;
+    margin-top: 5vmin;
+    margin-right: 7vmin;
   }
 }
