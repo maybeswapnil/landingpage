@@ -11,7 +11,7 @@
   
 
   .box {
-    width: 40%;
+    width: 20%;
     margin: 0 auto;
     background: rgba(255,255,255,0.2);
     padding: 35px;
@@ -30,24 +30,24 @@
     z-index: 90;
   }
   
-  .popup {
+  .popup2 {
     margin: 70px auto;
     padding: 0px;
     background-color: #fff;
     border-radius: 5px;
-    width: 70%;
-    height: 80%;
+    width: 60%;
+    height: 50%;
     position: relative;
-    margin-top: 10vmin;
+    margin-top: 25vmin;
     display: flex;
   }
   
-  .popup h2 {
+  .popup2 h2 {
     margin-top: 0;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
   }
-  .popup .close {
+  .popup2 .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -56,10 +56,10 @@
     text-decoration: none;
     color: #333;
   }
-  .popup .close:hover {
+  .popup2 .close:hover {
     color: var(--font-color-hover);
   }
-  .popup .content {
+  .popup2 .content {
     max-height: 30%;
     overflow: auto;
   }
@@ -73,12 +73,12 @@
     .close {
         color: white;
     }
-    .popup {
+    .popup2 {
         margin: 70px auto;
         padding: 0px;
         background-color: #fff;
         border-radius: 5px;
-        width: 49%;
+        width: 50%;
         height: 80%;
         position: relative;
         margin-top: 15vmin;
@@ -98,31 +98,28 @@
     .close {
         color: white;
     }
-    .popup {
+    .popup2 {
         margin: 70px auto;
         padding: 0px;
         background-color: #fff;
         border-radius: 5px;
-        width: 70%;
+        width: 80%;
         height: 80%;
         position: relative;
         margin-top: 15vmin;
         display: flex;
         flex-direction: column;
-        overflow: auto;
-        overflow: hidden;
-        overflow-y: scroll;
       }
+      .popup2-image {
+        border-radius: 3px;
+        border-bottom-left-radius: 3px;
+        max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
   }
 
-  .popup-image {
-      width: 53.4vh;
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-      max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
+  
 
   .content {
       right: 0;
@@ -159,6 +156,10 @@
     border-color: #008296;
     box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
     outline: 0;
+  }
+
+  .spotify-content {
+      margin-left: 2vmin;
   }
 
   
