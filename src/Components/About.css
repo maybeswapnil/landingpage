@@ -8,24 +8,22 @@
   }
 
 .About {
-    height: 130vh;
-    margin-top: 8vmin;
+    height: 100vh;
+    margin-top: 1vmin;
 }
-.main-about {
+.main-about-div {
     display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-header p {
-    align-item: center;
+    flex-direction: column;
+    transform: translate(16%, 50%);
+    width: 60%;
 }
 
 @media only screen and (max-width: 1400px) { 
-    .main-about {
+    .main-about-div {
+        margin-top: 60vmin;
         display: flex;
-        text-align: center;
-        justify-content: center;
-        margin-top: 60vh;
+        flex-direction: column;
+        transform: translate(7%, 50%);
+        width: 88%;
     }
 }

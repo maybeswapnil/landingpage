@@ -1,6 +1,6 @@
 import axios from 'axios';
-import {useState, useEffect} from 'react'
-import ImageForm from './ImageForm';
+import React,{useState, useEffect} from 'react'
+import equalizer from '../Assets/Equalizer.gif';
 import './NowPlayingPopup.scss';
 
 function NowPlayingPopup(props) {
@@ -113,6 +113,9 @@ function NowPlayingPopup(props) {
             <h1>{spotifyData.album.artists[0].name}</h1>
             <h4>{spotifyData.name}</h4>
             <p>{(spotifyData.duration_ms)/1000}</p>
+            <br/>
+            <br/>
+            {spotifyData.name.length!==0?<img src={equalizer} />:null}
         
             </div> 
            
