@@ -5,6 +5,7 @@ import Intro from './Components/Intro';
 import Content from './Components/Content';
 import {ReactComponent as Spinner} from './Assets/spinner.svg'
 import Footer from './Components/Footer';
+import About from './Components/About';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Header />
             <Intro />
             <Content />
+            <About />
             <Footer />
           </>
         }

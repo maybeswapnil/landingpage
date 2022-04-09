@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import ImageForm from './ImageForm';
 import './PopupImage.css';
 
 function PopupImage(props) {
@@ -10,12 +11,18 @@ function PopupImage(props) {
         <div className="popup">
             <img src={props.url} className="popup-image"/>
             <a className="close" href='#content' onClick={() => props.close()}>&times;</a>
-            <div className="content">
+            {/* <div className="content">
                 Thank to pop me out of that button, but now i'm done so you can close this window.
-            </div>
+               
+            </div> */}
+         
+            {/* <MyPug /> */}
+            <ImageForm />
         </div>
         </div>
   );
 }
 
 export default PopupImage;
+
+

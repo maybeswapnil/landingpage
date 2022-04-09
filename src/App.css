@@ -7,7 +7,6 @@
   --font-color-hover: #FF5F00;
   --background-color: white;
   --font-style: 'Source Sans Pro', sans-serif;
-  transition-duration: 0.3s;
 }
 
 ::-webkit-scrollbar {
@@ -53,13 +52,11 @@
   padding-left: 5vmin
 }
 .middle-header {
-  transition-duration: 0.3s;
   font-size: 2vmin;
   color: var(--font-color);
 }
 .middle-header-mobile {
   display: none;
-  transition-duration: 0.3s;
   font-size: 4vmin;
   color: var(--font-color);
 }
@@ -87,7 +84,6 @@
 
 .mobile-hamburger {
   display: none;
-  transition-duration: 0.3s;
   font-size: 4vmin;
   color: var(--font-color);
 }
@@ -109,7 +105,6 @@
   
   .middle-header {
     display: none;
-    transition-duration: 0.3s;
     font-size: 2vmin;
     color: var(--font-color);
     left: 0;
@@ -117,14 +112,12 @@
 
   .mobile-hamburger:hover {
     display: block;
-    transition-duration: 0.3s;
     font-size: 4vmin;
     color: var(--font-color);
   }
 
   .mobile-hamburger {
     display: block;
-    transition-duration: 0.3s;
     font-size: 4vmin;
     color: var(--font-color-hover);
     z-index: 2;
