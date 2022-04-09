@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import './Content.css';
+import PopupImage from './PopupImage'
 const image = [
 	'https://images.unsplash.com/photo-1588417446723-884e75a48432?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=307&q=80',
 	'https://images.unsplash.com/photo-1588417446123-e7202e88f934?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=308&q=80',
@@ -12,9 +13,21 @@ const image = [
 ]
 
 function Content() {
+  
+  const [popupImageState,  setPopupImageState] = useState(false);
+  const [popupImageStateValue,  setPopupImageStateValue] = useState('');
 
+  function popupStateChangerFunction() {
+        setPopupImageState(!popupImageState)
+  }
+
+  function popupStateValueChangerFunction(val) {
+    setPopupImageStateValue(val);
+    popupStateChangerFunction();
+  }
+    
   return (
-    <div className="Content">
+    <div className="Content" id='content'>
         <header className='main-content'>
             <h1 className='main-content-title'>pictures are captures by swapnil sharma</h1>
             <p>Find the picture that best suit your home</p>
@@ -22,13 +35,17 @@ function Content() {
         <div className='image-center'>
             <div className='main-content-images-div'>
                 {image.map((r) => {
-                    console.log(r)
                     return(
-                        <img src={r} className='main-content-images'/>
+                        <img src={r} className='main-content-images' onClick={(e) => popupStateValueChangerFunction(e.target.src)}/>
                     )
                 })}
             </div>  
-        </div>         
+        </div> 
+        {popupImageState?
+            <PopupImage url={popupImageStateValue} close={popupStateChangerFunction}/>
+        :null}
+        <br/>      
+        <br/>      
     </div>
   );
 }

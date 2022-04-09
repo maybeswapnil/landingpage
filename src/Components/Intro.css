@@ -5,6 +5,7 @@
   padding: 0;
   --font-color: black;
   --font-color-hover: #FF5F00;
+  --font-color-shadow: grey;
   --background-color: white;
   --font-style: 'Source Sans Pro', sans-serif;
   transition-duration: 0.3s;
@@ -18,7 +19,7 @@
     height: 100%;
     text-align: center;
     justify-content: center;
-    margin-top: 30vh;
+    margin-top: 40vh;
 }
 
 .main-intro-title {
@@ -40,21 +41,18 @@
     z-index: -1;
     top: 0;
     margin-top: 30vmin;
+    margin-right: 15vmin;
     animation-name: top;
     transition-duration: 2s;
 }
 
 .full-image-one {
     box-shadow: 3px 3px 3px 3px;
-    width: 60%;
-    height: 60%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: var(--font-color-shadow) 0px 5px 10px;
 }
 .full-image-two {
     box-shadow: 3px 3px 3px 3px;
-    width: 60%;
-    height: 60%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: var(--font-color-shadow) 0px 5px 15px;
 }
 
 @keyframes top {
@@ -82,8 +80,8 @@
     
     .full-image-one {
         box-shadow: 3px 3px 3px 3px;
-        width: 60%;
-        height: 60%;
+        width: 90%;
+        height: 90%;
         margin-left: -5vmin;
         margin-top: -60vmin;
 
@@ -91,10 +89,10 @@
     }
     .full-image-two {
         box-shadow: 3px 3px 3px 3px;
-        width: 50%;
-        height: 50%;
+        width: 70%;
+        height: 70%;
         margin-top: -20vmin;
-        margin-left: 40vmin;
+        margin-left: 30vmin;
 
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }

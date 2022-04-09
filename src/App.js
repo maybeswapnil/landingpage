@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Intro from './Components/Intro';
 import Content from './Components/Content';
 import {ReactComponent as Spinner} from './Assets/spinner.svg'
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Header />
             <Intro />
             <Content />
+            <Footer />
           </>
         }
     </div>
