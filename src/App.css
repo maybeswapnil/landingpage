@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Source+Sans+Pro:wght@200&display=swap');
 :root {
   margin: 0;
   padding: 0;
@@ -7,6 +7,13 @@
   --font-color-hover: #FF5F00;
   --background-color: white;
   --font-style: 'Source Sans Pro', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -40,10 +47,34 @@
 .App-header {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  
+  background-color: white;
   font-size: calc(10px + 2vmin);
   color: var(--font-color);
 }
+.social-media {
+  width: 2vmin;
+  margin-top: 2vmin;
+  margin-left: -1.7vmin;
+  display: flex;
+}
+
+#github {
+  width: 7vmin;
+  padding: 2vmin;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+#github:hover {
+  width: 7vmin;
+  padding: 0vmin;
+  z-index: 190;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
+#up {
+}
+
 
 .main-header {
   font-size: calc(10px + 2vmin);
@@ -93,7 +124,7 @@
     display: block;
     margin-top: 10vmin;
     z-index: 0;
-    color: var(--font-color-hover);
+    color: white
   }
   .middle-header-mobile:hover {
     display: block;

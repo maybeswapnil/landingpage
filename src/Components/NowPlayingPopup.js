@@ -116,7 +116,6 @@ function NowPlayingPopup(props) {
             <br/>
             <br/>
             {spotifyData.name.length!==0?<img src={equalizer} />:null}
-        
             </div> 
            
         </div>
@@ -127,3 +126,4 @@ function NowPlayingPopup(props) {
 export default NowPlayingPopup;
 
 
+1

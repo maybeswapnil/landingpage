@@ -5,7 +5,7 @@ import './About.css';
 function About() {
 
   return (
-    <div className="About">
+    <div className="About" id='about'>
         <div className='main-about-div'>
             <h1 className='main-about'>About Me</h1>
             <p className='main-about'>Web Application Developer with experience in creating. maintaining and implementing source code that made up applications back-end functionalities and 

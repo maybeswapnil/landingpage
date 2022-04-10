@@ -29,7 +29,7 @@ function Content() {
   return (
     <div className="Content" id='content'>
         <header className='main-content'>
-            <h1 className='main-content-title'>pictures are captures by swapnil sharma</h1>
+            <h1 className='main-content-title'>Query about available prints?</h1>
             <p>Find the picture that best suits your home</p>
         </header>
         <div className='image-center'>

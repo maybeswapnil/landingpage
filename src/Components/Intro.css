@@ -11,18 +11,41 @@
 }
 
 .Intro {
-    height: 70vh;
+    height: 100vh;
+    margin-top: -12vmin;
+    background-image: url(../Assets/background.jpg);
+    background-size: 210vh;
+    background-repeat: no-repeat;
 }
 
 .main-intro {
     height: 100%;
-    text-align: center;
-    justify-content: center;
-    margin-top: 40vh;
+    margin-left: 30vh;
+}
+
+.main-intro-description {
+    font-size: 7vmin;
+    font-family: var(--font-style);
+    margin: 0;
+
+}
+
+.main-intro-child {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vmin;
+}
+
+.main-intro-p {
+    width: 40%;
 }
 
 .main-intro-title {
-    font-size: 10vmin;
+    font-size: 7vmin;
+    font-family: var(--font-style);
+    padding: -10vmin;
+    margin-top: 20vmin;
+    margin-bottom: 0;
 }
 
 .image-body {
@@ -62,6 +85,24 @@
     box-shadow: var(--font-color-shadow) 0px 5px 15px;
 }
 
+.resume-button {
+    width: 24vmin;
+    height: 5vmin;
+    background-color: #FF5F00;
+    font-weight: 100;
+    font-style: var(--font-style);
+    color: white;
+    border: 1px var(--font-color-hover) bold;
+}
+
+.resume-button:hover {
+    width: 24vmin;
+    height: 5vmin;
+    box-shadow: var(--font-color-shadow) 0px 5px 15px;
+    cursor: pointer;
+
+}
+
 @keyframes top {
     from {
         margin-top: -90vmin;
@@ -71,13 +112,8 @@
     }
 }
 
-@media only screen and (max-width: 600px) { 
-    .main-intro {
-        height: 100%;
-        text-align: center;
-        justify-content: center;
-        margin-top: 35vh;
-    }
+@media only screen and (max-width: 1000px) { 
+    
     .image-body {
         position: absolute;
         margin-top: -130vmin;
@@ -87,19 +123,19 @@
     
     .full-image-one {
         box-shadow: 3px 3px 3px 3px;
-        width: 90%;
-        height: 90%;
+        width: 50%;
+        height: 45%;
         margin-left: -5vmin;
-        margin-top: -60vmin;
+        margin-top: -30vmin;
 
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     .full-image-two {
         box-shadow: 3px 3px 3px 3px;
-        width: 70%;
-        height: 70%;
-        margin-top: -20vmin;
-        margin-left: 30vmin;
+        width: 50%;
+        height: 50%;
+        margin-top: 0vmin;
+        margin-left: 50vmin;
 
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
@@ -109,5 +145,43 @@
         z-index: -1;
         top: 0;
         margin-top: 100vmin;
+    }
+    .image-body-three {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        top: 0;
+        margin-top: 70vmin;
+        margin-right: 30vmin;
+        display: none;
+    }
+    .main-intro-description {
+        font-size: 7vmin;
+        font-family: var(--font-style);
+        margin: 0;
+    
+    }
+    
+    .main-intro-child {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vmin;
+    }
+    
+    .main-intro-p {
+        width: 70%;
+    }
+    
+    .main-intro-title {
+        font-size: 7vmin;
+        font-family: var(--font-style);
+        padding: -10vmin;
+        margin-top: 30vmin;
+    margin-bottom: 0;
+    
+    }
+    .main-intro {
+        height: 100%;
+        margin-left: 10vh;
     }
 }
