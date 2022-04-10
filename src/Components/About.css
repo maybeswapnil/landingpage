@@ -8,8 +8,8 @@
   }
 
 .About {
-    height: 100vh;
-    margin-top: 1vmin;
+    height: 40vh;
+    margin-top: -70vmin;
 }
 .main-about-div {
     display: flex;
@@ -19,8 +19,26 @@
 }
 
 @media only screen and (max-width: 1400px) { 
+    .About {
+        height: 120vh;
+        margin-top: -70vmin;
+    }
     .main-about-div {
-        margin-top: 60vmin;
+        margin-top: 40vmin;
+        display: flex;
+        flex-direction: column;
+        transform: translate(7%, 50%);
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 700px) { 
+    .About {
+        height: 90vh;
+        margin-top: -150vmin;
+    }
+    .main-about-div {
+        margin-top: 20vmin;
         display: flex;
         flex-direction: column;
         transform: translate(7%, 50%);

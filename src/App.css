@@ -50,6 +50,8 @@ html {
   background-color: white;
   font-size: calc(10px + 2vmin);
   color: var(--font-color);
+  box-shadow: rgba(87, 86, 86, 0.3) 0px 1px 30px;
+
 }
 .social-media {
   width: 2vmin;
