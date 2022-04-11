@@ -3,6 +3,8 @@ import './Intro.css';
 import github from '../Assets/github.png'
 import linkedin from '../Assets/linkedin.png'
 import pexels from '../Assets/pexels.png';
+import resume from '../Assets/swapnil-sharma-resume.pdf';
+
 
 import stackoverflow from '../Assets/stackoverflow.png'
 const image = { 
@@ -12,29 +14,28 @@ const image = {
 }
 
 function Intro() {
- const data = ['Frontend Developer....', 'Backend Developer...', 'Fullstack Developer..', 'Abstract Photographer.']
+ const data = ['Frontend Developer...', 'Backend Developer...', 'Fullstack Developer...']
   const [descDisplay,  setDescDisplay] = useState('')
 
   useState(() => {
-    var j = 0;
-   // addString(data[0])
-   setDescDisplay(descDisplay + data[j])
+    var j = 1;
+    addString(data[0])
 
     setInterval(() => {
-       setDescDisplay(descDisplay + data[j])
-      // addString(data[j])
+       addString(data[j])
        j++;
-       if(j>3) j=0;
-    }, 1000)
+       if(j>2) j=0;
+    },4000)
   }, [])
 
-  function addString(datastring) {
+  function addString(datastring, m='') {
+      if(datastring.length===0) return;
         var ary = datastring.split('')
-        var n = descDisplay+ ary[0]
-        setDescDisplay('hello' + n)
-        const time = setInterval(() => {
-            setDescDisplay(n)
-        }, 2000);
+        var n = m + ary.shift()
+        setDescDisplay(n + '|')
+        setTimeout(() =>
+            addString(ary.join(''), n)
+        , 100);
   }
 
   return (
@@ -47,13 +48,13 @@ function Intro() {
             <br/>
             <p className='main-intro-p'>Web Application Developer with experience in creating. maintaining and implementing source code that made up applications back-end functionalities.</p>
             <div className="social-media">
-                <a id="up" href="https://github.com/hellochemo"><img id='github' src={github} /></a>
+                <a id="up" href="https://github.com/maybeswapnil"><img id='github' src={github} /></a>
                 <a id="up" href="https://stackoverflow.com/users/11640117/swapnil-sharma"><img id='github' src={stackoverflow} /></a>
                 <a id="up" href="https://www.linkedin.com/in/swapnil5harma/"><img id='github' src={linkedin} /></a>
                 <a id="up" href="https://www.pexels.com/@eyeswithmyopia"><img id='github' src={pexels} /></a>
             </div>
             <br/>
-            <button className='resume-button' value='download'>Resume</button>
+            <a href={resume} style={{color: 'white'}} download="swapnil-resume.pdf"><button className='resume-button' value='download'>Resume</button></a>
         </header>
         <div className='image-body' id='home'>
             <img src={'https://i.imgur.com/NIKjQYj.png'} className='full-image-two' />

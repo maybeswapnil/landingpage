@@ -29,7 +29,7 @@
     height: 100vh;
     margin-top: -12vmin;
     background-image: url(../Assets/background.jpg);
-    background-size: 210vh;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -52,8 +52,8 @@
 }
 
 .main-intro-p {
-    width: 50%;
-    font-size: 2.5vmin;
+    width: 40%;
+    font-size: 2vmin;
 }
 
 .main-intro-title {
@@ -110,22 +110,65 @@
 
 @media only screen and (max-width: 1600px) { 
     .image-body {
-        display: none;
+        display: block;
         position: absolute;
-        margin-top: -95vmin;
+        margin-top: -90vh;
         z-index: 4;
-        margin-left: 110vmin;
+        margin-left: 100vmin;
+    }
+
+    .image-body {
+        animation-duration: 2s;
+        animation-name: slidein;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-top: -79vmin;
+        }
+      
+        to {
+          margin-top: -90vmin;
+        }
+    }
+    .full-image-two {
+        width: 90%;
+        height: 50%;
+        margin-top: 0vmin;
     }
 }
 
-@media only screen and (max-width: 1000px) { 
+@media only screen and (max-width: 800px) { 
+    .Intro {
+        height: 100vh;
+        margin-top: -12vmin;
+        background-image: url(../Assets/background.jpg);
+        background-size: 200vh;
+        background-repeat: no-repeat;
+    }
     
     .image-body {
+        display: block;
         position: absolute;
-        margin-top: -130vmin;
-        z-index: -1;
-        margin-left: 10vmin;
+        margin-top: -55vh;
+        z-index: 4;
+        margin-left: -46vmin;
     }
+
+    .image-body {
+        animation-duration: 2s;
+        animation-name: slidein;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-top: -79vmin;
+        }
+      
+        to {
+          margin-top: -100vmin;
+        }
+      }
     
     .full-image-one {
         box-shadow: 3px 3px 3px 3px;
@@ -136,13 +179,10 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     .full-image-two {
-        box-shadow: 3px 3px 3px 3px;
-        width: 50%;
+        width: 62%;
         height: 50%;
         margin-top: 0vmin;
         margin-left: 50vmin;
-
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     .image-body-two {
         position: absolute;
@@ -190,12 +230,5 @@
     .main-intro {
         height: 100%;
         margin-left: 5vh;
-    }
-    .image-body {
-        display: none;
-        position: absolute;
-        margin-top: -95vmin;
-        z-index: 4;
-        margin-left: 110vmin;
     }
 }

@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+h2 a:hover {
+  color: var(--font-color-hover);
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -71,7 +75,6 @@ html {
   width: 7vmin;
   padding: 0vmin;
   z-index: 190;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 
 #up {
