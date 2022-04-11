@@ -12,19 +12,20 @@ const image = {
 }
 
 function Intro() {
- const data = ['Frontend Developer.', 'Backend Developer..', 'Fullstack Developer...']
+ const data = ['Frontend Developer....', 'Backend Developer...', 'Fullstack Developer..', 'Abstract Photographer.']
   const [descDisplay,  setDescDisplay] = useState('')
 
   useState(() => {
     var j = 0;
    // addString(data[0])
+   setDescDisplay(descDisplay + data[j])
 
     setInterval(() => {
        setDescDisplay(descDisplay + data[j])
       // addString(data[j])
        j++;
-       if(j>2) j=0;
-    }, 400)
+       if(j>3) j=0;
+    }, 1000)
   }, [])
 
   function addString(datastring) {
@@ -37,11 +38,11 @@ function Intro() {
   }
 
   return (
-    <div className="Intro" >
+    <div className="Intro" style={{}}>
         <header className='main-intro'>
             <div className='main-intro-child'>
                 <h1 className='main-intro-title'>Hi, I am Swapnil</h1>
-                <h1 className='main-intro-description'>{descDisplay}</h1>
+                <h1 className='main-intro-description'>{'I am a ' + descDisplay}</h1>
             </div>
             <br/>
             <p className='main-intro-p'>Web Application Developer with experience in creating. maintaining and implementing source code that made up applications back-end functionalities.</p>
@@ -54,10 +55,10 @@ function Intro() {
             <br/>
             <button className='resume-button' value='download'>Resume</button>
         </header>
-        {/* <div className='image-body' id='home'>
-            <img src={image[0]} className='full-image-one' />
+        <div className='image-body' id='home'>
+            <img src={'https://i.imgur.com/NIKjQYj.png'} className='full-image-two' />
         </div>
-        <div className='image-body-two'>
+        {/* <div className='image-body-two'>
             <img src={image[1]} className='full-image-two' />
         </div>
         <div className='image-body-three'>

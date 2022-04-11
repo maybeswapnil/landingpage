@@ -11,18 +11,28 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+/* .icon-bodies {
+    animation-duration: 9s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 110%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  } */
 
 .Content {
     height: 130vh;
-    
     margin-top: -10vmin;
 }
-.main-content {
-    text-align: center;
-    justify-content: center;
-    margin-top: 20vh;
-    height: 20vh;
-}
+
 .main-content-title {
     font-size: 3vmin;
 }
@@ -33,9 +43,6 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-.icon-bodies {
 }
 
 .main-content-icons:hover {
@@ -64,38 +71,6 @@
 }
 
 @media only screen and (max-width: 1400px) { 
-    .main-content-icons {
-        width: 80%;
-        display: block;
-        align-self: center;
-        margin-left: 5vmin;
-        padding-bottom: 6vmin;
-    }
-    .main-content-icons:hover {
-        width: 80%;
-        display: block;
-        align-self: center;
-        margin-left: 5vmin;
-        padding-bottom: 6vmin;
-        cursor: pointer;
-    }
-    .image-center {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;    
-
-    }
-    .main-content-icons-div {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        gap: 1vmin;
-    }
     .about-skills {
         height: 50vh;
         margin-top: -30vmin;
@@ -118,16 +93,9 @@
         padding-bottom: 6vmin;
         cursor: pointer;
     }
-    .image-center {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
     .main-content-icons-div {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         text-align: center;
         justify-content: center;

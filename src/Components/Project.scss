@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+:root {
+  margin: 0;
+  padding: 0;
+  --font-color: black;
+  --font-color-hover: #FF5F00;
+  --background-color: white;
+  --font-style: 'Source Sans Pro', sans-serif;
+}
+
+.projects {
+    width: 30vh;
+    height: 30vh;
+    box-shadow: rgba(119, 119, 119, 0.3) 0px 1px 30px;
+}
+
+.projects:hover {
+    width: 30vh;
+    height: 30vh;
+    box-shadow: rgba(187, 72, 72, 0.3) 0px 1px 30px;
+}
+
+.project-image {
+    width: 30vh;
+
+}
+
+.about-project-main-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+  
+
+  @media only screen and (max-width: 1400px) { 
+    .about-project-main-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2vmin;
+
+    }
+ 
+}
+  
+  @media screen and (max-width: 700px){
+    .project-image {
+        width: 20vh;
+    
+    }
+    .projects {
+        width: 20vh;
+        height: 20vh;
+        box-shadow: rgba(119, 119, 119, 0.3) 0px 1px 30px;
+    }
+    
+    .projects:hover {
+        width: 20vh;
+        height: 20vh;
+        box-shadow: rgba(187, 72, 72, 0.3) 0px 1px 30px;
+    }
+    .about-project-main-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2vmin;
+    }
+  
+  }
+
+  
+
+  

@@ -86,7 +86,7 @@ function NowPlayingPopup(props) {
     "href": "",
     "id": "",
     "is_local": false,
-    "name": "",
+    "name": "User Away",
     "popularity": false,
     "preview_url": "",
     "track_number": 4,
@@ -112,10 +112,8 @@ function NowPlayingPopup(props) {
             <div className="spotify-content">
             <h1>{spotifyData.album.artists[0].name}</h1>
             <h4>{spotifyData.name}</h4>
-            <p>{(spotifyData.duration_ms)/1000}</p>
-            <br/>
-            <br/>
-            {spotifyData.name.length!==0?<img src={equalizer} />:null}
+            <p>{(spotifyData.duration_ms)/1000||null}</p>
+            {/* {spotifyData.name.length!==0?<img src={equalizer} />:null} */}
             </div> 
            
         </div>

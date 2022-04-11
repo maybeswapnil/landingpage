@@ -31,6 +31,8 @@ function Content() {
         <header className='main-content'>
             <h1 className='main-content-title'>Query about available prints?</h1>
             <p>Find the picture that best suits your home</p>
+            <br/>
+            <button className='resume-button' value='download'>Order Prints ►</button>
         </header>
         <div className='image-center'>
             <div className='main-content-images-div'>

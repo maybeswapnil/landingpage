@@ -9,7 +9,7 @@ function Header() {
     <div className="Header">
       <header className="App-header">
           <div className="main-header-div">
-            <h1 className="main-header"><a href=''>{'<[][][]:[][][]>'}</a></h1>
+            <h1 className="main-header"><a href=''>{'<[][][]:[][][`]/>'}</a></h1>
           </div>
           <div className="middle-header-div">
             <h2 className="mobile-hamburger" onClick={() => setMobileNavbarState(!mobileNavbarState)}>☰</h2>
