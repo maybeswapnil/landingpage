@@ -14,7 +14,7 @@ const image = {
 }
 
 function Intro() {
- const data = ['Frontend Developer...', 'Backend Developer...', 'Fullstack Developer...']
+ const data = ['Frontend Developer..', 'Backend Developer..', 'Fullstack Developer..']
   const [descDisplay,  setDescDisplay] = useState('')
 
   useState(() => {
