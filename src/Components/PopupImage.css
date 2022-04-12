@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   --font-color: black;
-  --font-color-hover: #FF5F00;
+  --font-color-hover: #f1d11a;
   --background-color: white;
   --font-style: 'Source Sans Pro', sans-serif;
 }
@@ -28,6 +28,7 @@
     right: 0;
     background: rgba(0, 0, 0, 0.7);
     z-index: 90;
+    
   }
   
   .popup {
@@ -40,6 +41,7 @@
     position: relative;
     margin-top: 10vmin;
     display: flex;
+    max-width: 115vmin;
   }
   
   .popup h2 {
@@ -64,7 +66,14 @@
     overflow: auto;
   }
 
+  .popup-image {
+    display: block;
+  }
+
   @media only screen and (max-width: 1400px) { 
+    .popup-image {
+      display: none;
+    }
     .box{
       width: 60%;
      
@@ -109,16 +118,13 @@
         margin-top: 15vmin;
         display: flex;
         flex-direction: column;
-        overflow: auto;
-        overflow: hidden;
-        overflow-y: scroll;
       }
   }
 
   .popup-image {
       width: 53.4vh;
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
       max-width: 100%;
     max-height: 100%;
     object-fit: contain;

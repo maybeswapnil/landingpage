@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   --font-color: black;
-  --font-color-hover: #FF5F00;
+  --font-color-hover: #f1d11a;
   --background-color: white;
   --font-style: 'Source Sans Pro', sans-serif;
 }
@@ -14,6 +14,10 @@ a {
 }
 html {
   scroll-behavior: smooth;
+}
+
+h2 a {
+  transition-duration: 0.3s;
 }
 
 h2 a:hover {
@@ -58,7 +62,6 @@ h2 a:hover {
 
 }
 .social-media {
-  width: 2vmin;
   margin-top: 2vmin;
   margin-left: -1.7vmin;
   display: flex;
@@ -73,8 +76,8 @@ h2 a:hover {
 
 #github:hover {
   width: 7vmin;
-  padding: 0vmin;
-  z-index: 190;
+  padding: 1vmin;
+  z-index: 19;
 }
 
 #up {

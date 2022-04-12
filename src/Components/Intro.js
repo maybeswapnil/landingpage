@@ -39,7 +39,7 @@ function Intro() {
   }
 
   return (
-    <div className="Intro" style={{}}>
+    <div className="Intro" id='main-intro' style={{}}>
         <header className='main-intro'>
             <div className='main-intro-child'>
                 <h1 className='main-intro-title'>Hi, I am Swapnil</h1>
@@ -54,7 +54,7 @@ function Intro() {
                 <a id="up" href="https://www.pexels.com/@eyeswithmyopia"><img id='github' src={pexels} /></a>
             </div>
             <br/>
-            <a href={resume} style={{color: 'white'}} download="swapnil-resume.pdf"><button className='resume-button' value='download'>Resume</button></a>
+            <a href={resume} style={{color: 'white'}} download="swapnil-resume.pdf"><button class="button-30" role="button">Resume</button></a>
         </header>
         <div className='image-body' id='home'>
             <img src={'https://i.imgur.com/NIKjQYj.png'} className='full-image-two' />
@@ -70,3 +70,5 @@ function Intro() {
 }
 
 export default Intro;
+
+

@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import ImageForm from './ImageForm';
+import OrderForm from './OrderForm';
 import './PopupImage.css';
 
 function PopupImage(props) {
@@ -10,14 +11,15 @@ function PopupImage(props) {
       <div id="popup1" className="overlay">
         <div className="popup">
             <img src={props.url} className="popup-image"/>
-            <a className="close" href='#content' onClick={() => props.close()}>&times;</a>
+            <a className="close" href='#main-intro' onClick={() => props.close()}>&times;</a>
             {/* <div className="content">
                 Thank to pop me out of that button, but now i'm done so you can close this window.
                
             </div> */}
          
             {/* <MyPug /> */}
-            <ImageForm />
+            {props.imageform?<ImageForm />:<OrderForm />}
+            
         </div>
         </div>
   );
