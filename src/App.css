@@ -119,6 +119,7 @@ h2 a:hover {
   grid-gap: 1vmin;
   margin-top: 0.5em;
   margin-right: 6vmin;
+  background-color: white;
 }
 
 .mobile-hamburger {
@@ -132,7 +133,12 @@ h2 a:hover {
     display: block;
     margin-top: 10vmin;
     z-index: 0;
-    color: white
+    color: black;
+    animation-duration: 0.3s;
+    animation-name: slidedowntwo;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+
   }
   .middle-header-mobile:hover {
     display: block;
@@ -172,10 +178,35 @@ h2 a:hover {
   }
   .middle-header-div-mobile {
     text-align: right;
-    padding: 0;
+    padding: 4vmin;
     right: 0;
     position: absolute;
-    margin-top: 5vmin;
-    margin-right: 7vmin;
+    margin-top: 14.9vmin;
+    margin-right: 3vmin;
+    background-color: white;
+    animation-duration: 0.3s;
+    animation-name: slidedown;
+    border-radius: 5px;
+    box-shadow: rgba(87, 86, 86, 0.3) 0px 1px 30px;
+    height: 67vmin;
+    padding-top: 0vmin;
+  }
+  @keyframes slidedown {
+    from {
+      height: 20vmin;
+    }
+  
+    to {
+      height: 67vmin;
+    }
+  }
+  @keyframes slidedowntwo {
+    from {
+      margin-top: 0;
+    }
+  
+    to {
+      margin-top: 10vmin;
+    }
   }
 }
