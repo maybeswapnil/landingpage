@@ -123,10 +123,10 @@ Worked on various REST APIs and have an understanding of various headers used. U
             <p className='main-about'>I'm a self-taught web developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I'm focused on the backend development.</p>
             <br/>
             <div className='about-project-main-div'>
-                <Project url='https://i.imgur.com/waVMxhJ.png'/>
+                <Project url='https://i.imgur.com/NjFB7GW.jpg'/>
                 <Project url='https://i.imgur.com/cOt9rRY.png'/>
                 <Project url='https://i.imgur.com/cOt9rRY.png'/>
-                <Project url='https://i.imgur.com/waVMxhJ.png'/>
+                <Project url='https://i.imgur.com/NjFB7GW.jpg'/>
             </div>
             <br/>
             <br/>

@@ -37,7 +37,7 @@
     background-color: #fff;
     border-radius: 5px;
     width: 70%;
-    height: 80%;
+    height: 79%;
     position: relative;
     margin-top: 10vmin;
     display: flex;
@@ -89,7 +89,7 @@
         background-color: #fff;
         border-radius: 5px;
         width: 49%;
-        height: 80%;
+        height: none;
         position: relative;
         margin-top: 15vmin;
         display: flex;
@@ -112,7 +112,6 @@
         background-color: #fff;
         border-radius: 5px;
         width: 70%;
-        height: 80%;
         position: relative;
         margin-top: 15vmin;
         display: flex;
@@ -132,6 +131,8 @@
   .content {
       right: 0;
   }
+
+  
 
   .button-13 {
     background-color: #fff;

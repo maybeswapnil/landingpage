@@ -149,7 +149,7 @@ body {
 }
 
 .main-form {
-    margin-top:14vmin;
+    margin-top:10vmin;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -169,6 +169,7 @@ body {
     width: 2em;
     vertical-align: middle;
   }
+  #popup1 {}
 
 @media only screen and (max-width: 1400px) { 
     .main-form {
@@ -180,6 +181,15 @@ body {
         justify-content: center;
         margin-left: 5vmin;
     }
+    @keyframes slideup {
+        from {
+          margin-top: 14vmin;
+        }
+      
+        to {
+          margin-top: 10vmin;
+        }
+      }
 }
 
 @media only screen and (max-width: 600px) { 
@@ -190,8 +200,17 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 8vmin;
+        margin-left: 7vmin;
     }
+    @keyframes slideup {
+        from {
+          margin-top: 14vmin;
+        }
+      
+        to {
+          margin-top: 10vmin;
+        }
+      }
 }
 
 .content-submit {

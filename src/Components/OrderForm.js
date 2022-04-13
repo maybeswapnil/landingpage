@@ -22,6 +22,8 @@ function OrderForm(props) {
 
   return (
     <div id="popup1" className="main-form">
+        <br/>
+        <br/>
         <div className="form-group">
             <input className="form-field" type="email" placeholder="Email" ref ={l} onChange={(e) => setEmail(e.target.value)}/>
             <span>@gmail.com</span>
@@ -50,7 +52,7 @@ function OrderForm(props) {
         
         <div className="content-submit">
                 <button className="button-13" id='clear-button' onClick={() => clearFunction()} role="button">Clear</button>
-                <button className="button-13" id='submit-button' role="button">Submit</button>
+                <button className="button-13" id='submit-button' role="button" onClick={() => props.close()}>Submit</button>
         </div>
         <div class="tacbox">
         <input id="checkbox" type="checkbox" />

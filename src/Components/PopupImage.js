@@ -17,7 +17,7 @@ function PopupImage(props) {
                
             </div> */}
             {/* <MyPug /> */}
-            {props.imageform?<ImageForm />:<OrderForm />}
+            {props.imageform?<ImageForm close={props.close}/>:<OrderForm close={props.close}/>}
             
         </div>
         </div>
