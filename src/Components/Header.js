@@ -44,10 +44,10 @@ function Header() {
           </div>
           {!mobileNavbarState?null:
                 <div className="middle-header-div-mobile">
-                    <h2 className="middle-header-mobile" onClick={() => setNowPlayingView(!nowPlayingView)} style={{cursor:'pointer'}}>Spotify</h2>
-                    <h2 className="middle-header-mobile" onClick={(e) => popupStateValueChangerFunction(image[Math.floor(Math.random()*10)])}>Contact</h2>
+                    <h2 className="middle-header-mobile" onClick={() => setNowPlayingView(!nowPlayingView)} style={{cursor:'pointer'}}><a>Spotify</a></h2>
+                    <h2 className="middle-header-mobile" onClick={(e) => popupStateValueChangerFunction(image[Math.floor(Math.random()*10)])}><a>Contact</a></h2>
                     <h2 className="middle-header-mobile"><a href='#about'>About</a></h2>
-                    <h2 className="middle-header-mobile">Portfolio</h2>
+                    <h2 className="middle-header-mobile"><a>{'V' + version.split('-')[0]}</a></h2>
                 </div>
           }
           {!nowPlayingView?null:
