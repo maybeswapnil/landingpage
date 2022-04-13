@@ -160,12 +160,15 @@ body {
     display:block;
     padding: 1em;
     margin: 2em;
+    
+    margin-bottom: 2em;
+    margin-top: 0em;
     max-width: 100%;
     margin-left: 0vmin;
   }
   
   #checkbox {
-    height: 2em;
+    height: 1em;
     width: 2em;
     vertical-align: middle;
   }
@@ -183,7 +186,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 5vmin;
+        margin-left: 6vmin;
     }
     @keyframes slideup {
         from {
@@ -208,7 +211,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 7vmin;
+        margin-left: 8vmin;
     }
     @keyframes slideup {
         from {
@@ -222,6 +225,16 @@ body {
       #random-sentence {
         font-size:15px;
           width:100%;
+     }
+  .tacbox {
+    display:block;
+    padding: 1em;
+    margin: 0vmin;
+    margin-bottom: 2em;
+    margin-top: 0em;
+    max-width: 100%;
+    margin-left: 0vmin;
+    font-size: 10px;
   }
 }
 

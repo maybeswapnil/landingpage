@@ -21,7 +21,7 @@ function OrderForm(props) {
  }
 
   return (
-    <div id="popup1" className="main-form">
+    <div id="popup1" className="main-form" style={{marginTop: '10vmin'}}>
         <br/>
         <br/>
         <div className="form-group">
@@ -49,15 +49,15 @@ function OrderForm(props) {
             <span>{'Comments'}</span>
             <textarea lassName="form-field" type="text" placeholder="Write your comments here" ref ={o} onChange={(e) => setExtraInformation(e.target.value)}/>
         </div> */}
-        
+         <div class="tacbox">
+            <input id="checkbox" type="checkbox" />
+            <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+        </div>
         <div className="content-submit">
                 <button className="button-13" id='clear-button' onClick={() => clearFunction()} role="button">Clear</button>
                 <button className="button-13" id='submit-button' role="button" onClick={() => props.close()}>Submit</button>
         </div>
-        <div class="tacbox">
-        <input id="checkbox" type="checkbox" />
-        <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
-        </div>
+       
         <br/>
         <br/>
         <br/>

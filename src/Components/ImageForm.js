@@ -27,7 +27,7 @@ function ImageForm(props) {
 
   return (
     <div  className="main-form">
-        <div className="social-media" style={{marginLeft:'-0vmin'}}>
+        <div className="social-media" style={{marginLeft:'-0vmin',  width: '100%'}}>
                 <a id="up" href="https://github.com/maybeswapnil"><img id='github' src={github} /></a>
                 <a id="up" href="https://stackoverflow.com/users/11640117/swapnil-sharma"><img id='github' src={stackoverflow} /></a>
                 <a id="up" href="https://www.linkedin.com/in/swapnil5harma/"><img id='github' src={linkedin} /></a>
