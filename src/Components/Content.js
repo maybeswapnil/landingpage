@@ -28,7 +28,7 @@ function Content(props) {
     
   return (
     <div id='content' className={props.mode?"Content":"ContentDark"}>
-        <header className='main-content' id={props.mode?"Content":"ContentDark"}>
+        <header className='main-content' id={props.mode?"Content":"ContentDark"} style={{color:'black'}}>
             <h1 className='main-content-title'>Query about available prints?</h1>
             <p>Find the picture that best suits your home</p>
             <br/>
