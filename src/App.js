@@ -11,24 +11,24 @@ import Skills from './Components/Skills';
 function App() {
 
   const [spinner,  setSpinner] = useState(true)
+  const [darkMode,  setDarkMode] = useState(true)
 
   useEffect(() => {
       setTimeout(() => setSpinner(false), 1000)
   }, [])
 
   return (
-    <div className="App">
+    <div className={darkMode?"App":"AppDark"}>
         {spinner?
-          <div className='spinner-div'>
-            <Spinner />
+          <div className='spinner-div' style={{backgroundColor: 'white'}}>
+            <Spinner s/>
           </div>:
           <>
-            <Header />
-            <Intro />
-            <Content />
-            <About />
-            <Skills />
-            <Footer />
+            <Header mode={darkMode} changeMode={setDarkMode}/>
+            <Intro mode={darkMode}/>
+            <Content mode={darkMode}/>
+            <About mode={darkMode}/>
+            <Footer mode={darkMode}/>
           </>
         }
     </div>

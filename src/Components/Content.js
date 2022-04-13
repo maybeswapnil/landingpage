@@ -12,7 +12,7 @@ const image = [
 	'https://images.unsplash.com/photo-1588417099597-fb0b248d6c35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=307&q=80'
 ]
 
-function Content() {
+function Content(props) {
   
   const [popupImageState,  setPopupImageState] = useState(false);
   const [popupImageStateValue,  setPopupImageStateValue] = useState('');
@@ -27,8 +27,8 @@ function Content() {
   }
     
   return (
-    <div className="Content" id='content'>
-        <header className='main-content'>
+    <div id='content' className={props.mode?"Content":"ContentDark"}>
+        <header className='main-content' id={props.mode?"Content":"ContentDark"}>
             <h1 className='main-content-title'>Query about available prints?</h1>
             <p>Find the picture that best suits your home</p>
             <br/>

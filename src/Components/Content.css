@@ -15,10 +15,14 @@
 .Content {
     margin-top: -20vmin;
 }
+.ContentDark {
+    margin-top: 0vmin;
+  }
+
 .main-content {
     text-align: center;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: -2vh;
     height: 25vh;
 }
 .main-content-title {

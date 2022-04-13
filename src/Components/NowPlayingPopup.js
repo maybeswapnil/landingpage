@@ -109,7 +109,7 @@ function NowPlayingPopup(props) {
         <div className="popup2">
             <img src={spotifyData.album.images[0].url} className="popup2-image"/>
             <a className="close" onClick={() => props.close()}>&times;</a>
-            <div className="spotify-content">
+            <div className="spotify-content" style={{color:'black'}}>
                 <h1>{spotifyData.album.artists[0].name}</h1>
                 <h4>{spotifyData.name}</h4>
                 <p>{((spotifyData.duration_ms)/100000).toFixed(2) + ' minutes'||null}</p>

@@ -25,12 +25,33 @@
     }
   }
 
+  #dark-mode-onlyfontcolor {
+    color: white;
+  }
+
+  #dark-mode-onlyfontcolor:hover {
+    color: var(--font-color-hover);
+  }
+
+  #dark-mode-full {
+    background-color: #a5a5a5;
+    color: white;
+  }
+
 .Intro {
     height: 100vh;
     margin-top: -12vmin;
     background-image: url(../Assets/background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.IntroDark {
+  height: 100vh;
+  margin-top: -12vmin;
+  background-image: url(../Assets/background-dark.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .main-intro {
@@ -146,6 +167,13 @@
         background-size: 200vh;
         background-repeat: no-repeat;
     }
+
+    .IntroDark {
+      height: 100vh;
+      margin-top: -12vmin;
+      background-size: 200vh;
+      background-repeat: no-repeat;
+  }
     
     .image-body {
         display: block;

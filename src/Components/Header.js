@@ -15,7 +15,7 @@ const image = [
 ]
 
 const version = React.version;
-function Header() {
+function Header(props) {
   const [mobileNavbarState,  setMobileNavbarState] = useState(false)
   const [nowPlayingView,  setNowPlayingView] = useState(false)
   const [popupImageState,  setPopupImageState] = useState(false);
@@ -30,24 +30,24 @@ function Header() {
     popupStateChangerFunction();
   }
   return (
-    <div className="Header">
-      <header className="App-header">
+    <div className="Header" >
+      <header className="App-header" id={props.mode?'':'dark-mode-full'}>
           <div className="main-header-div">
-            <h1 className="main-header"><a href=''>{'<[][][]:[][][`]/>'}</a></h1>
+            <h1 className="main-header"><a href='' id={props.mode?'':'dark-mode-onlyfontcolor'}>{'<[][][]:[][][`]/>'}</a></h1>
           </div>
-          <div className="middle-header-div">
-            <h2 className="mobile-hamburger" id='pushbutton' onClick={() => setMobileNavbarState(!mobileNavbarState)}>☰</h2>
-            <h2 className="middle-header"  id='pushbutton' onClick={() => setNowPlayingView(!nowPlayingView)} style={{cursor:'pointer'}}><a>Spotify</a></h2>
-            <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}} onClick={(e) => popupStateValueChangerFunction(image[Math.floor(Math.random()*10)])}><a>Contact</a></h2>
-            <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}} ><a href='#about'>About</a></h2>
-            <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}}><a>{'V' + version.split('-')[0]}</a></h2>
+          <div className="middle-header-div" >
+            <h2 className="mobile-hamburger" id='pushbutton' onClick={() => setMobileNavbarState(!mobileNavbarState)}><a id={props.mode?'':'dark-mode-onlyfontcolor'}>☰</a></h2>
+            <h2 className="middle-header"  id='pushbutton' onClick={() => setNowPlayingView(!nowPlayingView)} style={{cursor:'pointer'}}><a id={props.mode?'':'dark-mode-onlyfontcolor'}>Spotify</a></h2>
+            <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}} onClick={(e) => popupStateValueChangerFunction(image[Math.floor(Math.random()*10)])}><a id={props.mode?'':'dark-mode-onlyfontcolor'}>Contact</a></h2>
+            <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}} ><a href='#about' id={props.mode?'':'dark-mode-onlyfontcolor'}>About</a></h2>
+            <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}} onClick={() => props.changeMode(!props.mode)}><a id={props.mode?'':'dark-mode-onlyfontcolor'}>{'V' + version.split('-')[0]}</a></h2>
           </div>
           {!mobileNavbarState?null:
                 <div className="middle-header-div-mobile">
                     <h2 className="middle-header-mobile" onClick={() => setNowPlayingView(!nowPlayingView)} style={{cursor:'pointer'}}><a>Spotify</a></h2>
                     <h2 className="middle-header-mobile" onClick={(e) => popupStateValueChangerFunction(image[Math.floor(Math.random()*10)])}><a>Contact</a></h2>
                     <h2 className="middle-header-mobile"><a href='#about'>About</a></h2>
-                    <h2 className="middle-header-mobile"><a>{'V' + version.split('-')[0]}</a></h2>
+                    <h2 className="middle-header-mobile" onClick={() => props.changeMode(!props.mode)}><a>{'V' + version.split('-')[0]}</a></h2>
                 </div>
           }
           {!nowPlayingView?null:

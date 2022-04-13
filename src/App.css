@@ -49,7 +49,15 @@ h2 a:hover {
 
 .App {
   font-family: var(--font-style);
-  height: 50vh;
+  height: 440vh;
+}
+.AppDark {
+  font-family: var(--font-style);
+  height: 440vh;
+  background-color: #a5a5a5;
+  color: white;
+  background-color: #535353;
+background-image: linear-gradient(315deg, #6d6d6d 0%, #e7e7e7 60%);
 }
 
 .App-header {
@@ -129,6 +137,12 @@ h2 a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .AppDark {
+    font-family: var(--font-style);
+    height: 620vh;
+    background-color: #a5a5a5;
+    color: white;
+  }
   .middle-header-mobile {
     display: block;
     margin-top: 10vmin;

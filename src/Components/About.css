@@ -10,6 +10,9 @@
 .About {
     height: 90vh;
 }
+.AboutDark {
+    height: 90vh;
+}
 .main-about-div {
     margin-top: -100vmin;
     display: flex;
@@ -37,7 +40,7 @@
         height: 90vh;
     }
     .main-about-div {
-        margin-top: -160vmin;
+        margin-top: -170vmin;
 
         display: flex;
         flex-direction: column;
