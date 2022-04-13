@@ -169,7 +169,11 @@ body {
     width: 2em;
     vertical-align: middle;
   }
-  #popup1 {}
+  #random-sentence {
+      font-size:15px;
+        width:70%;
+}
+  
 
 @media only screen and (max-width: 1400px) { 
     .main-form {
@@ -190,6 +194,10 @@ body {
           margin-top: 10vmin;
         }
       }
+      #random-sentence {
+        font-size:15px;
+          width:80%;
+  }
 }
 
 @media only screen and (max-width: 600px) { 
@@ -211,6 +219,10 @@ body {
           margin-top: 10vmin;
         }
       }
+      #random-sentence {
+        font-size:15px;
+          width:100%;
+  }
 }
 
 .content-submit {

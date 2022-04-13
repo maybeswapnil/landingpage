@@ -51,7 +51,7 @@ function ImageForm(props) {
                 <button className="button-13" id='submit-button' role="button" onClick={() => props.close()}>Submit</button>
         </div>
         <br/>
-        <p style={{fontSize:'15px', width:'80%'}}>If you're visiting this page, you're likely here because you're searching for a random sentence. Sometimes a random word just isn't enough, and that is where the random sentence generator comes into play. By inputting the desired number, you can make a list of as many random sentences as you want or need.</p>
+        <p  id='random-sentence'>If you're visiting this page, you're likely here because you're searching for a random sentence. Sometimes a random word just isn't enough, and that is where the random sentence generator comes into play. By inputting the desired number, you can make a list of as many random sentences as you want or need.</p>
         <br/>
     </div>
   );
