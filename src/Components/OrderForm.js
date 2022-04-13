@@ -27,20 +27,21 @@ function OrderForm(props) {
             <span>@gmail.com</span>
         </div>
         <div className="form-group">
+            <span>Name</span>
             <input className="form-field" type="text" placeholder="First Name" ref ={m} onChange={(e) => setFirstName(e.target.value)}/>
             <input className="form-field" type="email" placeholder="Last Name" ref ={n} onChange={(e) => setLastName(e.target.value)} />
         </div>
         <div className="form-group">
-            <input className="form-field" type="text" placeholder="First Name" ref ={m} onChange={(e) => setFirstName(e.target.value)}/>
-            <input className="form-field" type="email" placeholder="Last Name" ref ={n} onChange={(e) => setLastName(e.target.value)} />
+            <span>Mobile Number</span>
+            <input className="form-field" type="text" placeholder="Mobile Number" ref ={m} onChange={(e) => setFirstName(e.target.value)}/>
         </div>
         <div className="form-group">
-            <input className="form-field" type="text" placeholder="First Name" ref ={m} onChange={(e) => setFirstName(e.target.value)}/>
-            <input className="form-field" type="email" placeholder="Last Name" ref ={n} onChange={(e) => setLastName(e.target.value)} />
+            <span>Address</span>
+            <input className="form-field" type="text" placeholder="Address" ref ={m} onChange={(e) => setFirstName(e.target.value)}/>
         </div>
         <div className="form-group">
-            <input className="form-field" type="text" placeholder="First Name" ref ={m} onChange={(e) => setFirstName(e.target.value)}/>
-            <input className="form-field" type="email" placeholder="Last Name" ref ={n} onChange={(e) => setLastName(e.target.value)} />
+            <span>Pincode</span>
+            <input className="form-field" type="text" placeholder="Pincode" ref ={m} onChange={(e) => setFirstName(e.target.value)}/>
         </div>
         {/* <div className="form-group">
             <span>{'Comments'}</span>

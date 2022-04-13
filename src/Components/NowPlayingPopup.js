@@ -108,11 +108,11 @@ function NowPlayingPopup(props) {
       <div id="popup2" className="overlay">
         <div className="popup2">
             <img src={spotifyData.album.images[0].url} className="popup2-image"/>
-            <a className="close" href='#content' onClick={() => props.close()}>&times;</a>
+            <a className="close" onClick={() => props.close()}>&times;</a>
             <div className="spotify-content">
-            <h1>{spotifyData.album.artists[0].name}</h1>
-            <h4>{spotifyData.name}</h4>
-            <p>{(spotifyData.duration_ms)/1000||null}</p>
+                <h1>{spotifyData.album.artists[0].name}</h1>
+                <h4>{spotifyData.name}</h4>
+                <p>{((spotifyData.duration_ms)/100000).toFixed(2) + ' minutes'||null}</p>
             {/* {spotifyData.name.length!==0?<img src={equalizer} />:null} */}
             </div> 
            

@@ -60,6 +60,7 @@
   }
   .popup .close:hover {
     color: var(--font-color-hover);
+    cursor: pointer;
   }
   .popup .content {
     max-height: 30%;
@@ -93,8 +94,6 @@
         margin-top: 15vmin;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
-        overflow-y: scroll;
       }
 }
   

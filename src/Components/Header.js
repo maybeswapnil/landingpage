@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import NowPlayingPopup from './NowPlayingPopup';
 import PopupImage from './PopupImage'
 const image = [
@@ -13,6 +13,8 @@ const image = [
 	'https://images.unsplash.com/photo-1588417099597-fb0b248d6c35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=307&q=80',
 	'https://images.unsplash.com/photo-1588417099597-fb0b248d6c35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=307&q=80'
 ]
+
+const version = React.version;
 function Header() {
   const [mobileNavbarState,  setMobileNavbarState] = useState(false)
   const [nowPlayingView,  setNowPlayingView] = useState(false)
@@ -35,14 +37,14 @@ function Header() {
           </div>
           <div className="middle-header-div">
             <h2 className="mobile-hamburger" id='pushbutton' onClick={() => setMobileNavbarState(!mobileNavbarState)}>☰</h2>
-            <h2 className="middle-header"  id='pushbutton' onClick={() => setNowPlayingView(!nowPlayingView)} style={{cursor:'pointer'}}>Now Playing</h2>
-            <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}} onClick={(e) => popupStateValueChangerFunction(image[Math.floor(Math.random()*10)])}>Contact</h2>
+            <h2 className="middle-header"  id='pushbutton' onClick={() => setNowPlayingView(!nowPlayingView)} style={{cursor:'pointer'}}><a>Spotify</a></h2>
+            <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}} onClick={(e) => popupStateValueChangerFunction(image[Math.floor(Math.random()*10)])}><a>Contact</a></h2>
             <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}} ><a href='#about'>About</a></h2>
-            <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}}>Portfolio</h2>
+            <h2 className="middle-header"  id='pushbutton' style={{cursor:'pointer'}}><a>{'V' + version.split('-')[0]}</a></h2>
           </div>
           {!mobileNavbarState?null:
                 <div className="middle-header-div-mobile">
-                    <h2 className="middle-header-mobile" onClick={() => setNowPlayingView(!nowPlayingView)} style={{cursor:'pointer'}}>Now Playing</h2>
+                    <h2 className="middle-header-mobile" onClick={() => setNowPlayingView(!nowPlayingView)} style={{cursor:'pointer'}}>Spotify</h2>
                     <h2 className="middle-header-mobile" onClick={(e) => popupStateValueChangerFunction(image[Math.floor(Math.random()*10)])}>Contact</h2>
                     <h2 className="middle-header-mobile"><a href='#about'>About</a></h2>
                     <h2 className="middle-header-mobile">Portfolio</h2>

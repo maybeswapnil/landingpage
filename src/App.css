@@ -109,7 +109,7 @@ h2 a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1vmin;
-  margin-top: 0.5em;
+  margin-top: 0.35em;
   right: 0;
 }
 

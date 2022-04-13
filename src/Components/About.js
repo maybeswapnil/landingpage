@@ -6,9 +6,9 @@ import Project from './Project';
 function About() {
 
   return (
-    <div className="About" id='about'>
+    <div className="About" >
         <div className='main-about-div'>
-            <h1 className='main-about'>About Me</h1>
+            <h1 className='main-about' id='about'>About Me</h1>
             <p className='main-about'>Web Application Developer with experience in creating. maintaining and implementing source code that made up applications back-end functionalities and 
                 also in designing and developing user interfaces, testing, and debugging. Proven ability in optimizing web functionality that improves data retrieval and 
                 workflow efficiencies.
