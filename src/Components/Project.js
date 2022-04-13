@@ -17,7 +17,7 @@ function Projects(props) {
         <div className="project-image-div">
             <img src={props.url} className="project-image"/>
             
-            <a href='https://624d2d7569e4b679f19e7665--maybeswapnil.netlify.app/' target='_blank'>
+            <a href='https://satellite-tracker-3d.netlify.app/' target='_blank'>
                 <button className='resume-button' value='download' style={{backgroundColor: 'black', marginTop:'3vmin', width:'10vmin', height:'5vmin'}}>Open</button>
             </a> 
         </div>
