@@ -56,9 +56,9 @@ function Intro(props) {
             <br/>
             <a href={resume} style={{color: 'white'}} download="swapnil-resume.pdf"><button class="button-30" role="button">Resume</button></a>
         </header>
-        <div className='image-body' id='home'>
+        {/* <div className='image-body' id='home'>
             <img src={'https://i.imgur.com/NIKjQYj.png'} className='full-image-two' />
-        </div>
+        </div> */}
         {/* <div className='image-body-two'>
             <img src={image[1]} className='full-image-two' />
         </div>
