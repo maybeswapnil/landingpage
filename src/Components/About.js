@@ -123,10 +123,10 @@ function About(props) {
             <p className='main-about'>I'm a self-taught web developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I'm focused on the backend development.</p>
             <br/>
             <div className='about-project-main-div'>
-                <Project url='https://i.imgur.com/NjFB7GW.jpg'/>
-                <Project url='https://i.imgur.com/cOt9rRY.png'/>
-                <Project url='https://i.imgur.com/cOt9rRY.png'/>
-                <Project url='https://i.imgur.com/NjFB7GW.jpg'/>
+                <Project url='https://github.com/maybeswapnil/Satellite-Tracker-3D' name='Satellite Tracker' description='#reactjs #express #n2yo' descriptionpara='Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env.'/>
+                <Project url='https://github.com/maybeswapnil/Spotify-Playing-Now' name='Spotify API' description='#spotifyapi #express #nodejs' descriptionpara='This App displays the real time information and location of the Satellites above you. We use N2YO APIs to extract data, that data is used to calculate the real x, y, z coordinates. After that the App displays the sphere around the globe rotating (distance between the Satellites and Earth is relative).'/>
+                <Project url='https://github.com/maybeswapnil/CSV-Parser' name='CSVtoJSONParser' description='#reactjs #express #n2yo' descriptionpara='Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env.'/>
+                <Project url='https://github.com/maybeswapnil/String-Calculator-TDD-Kata' name='TDD Kata' description='#javascript #mocha #chai' descriptionpara='Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env.'/>
             </div>
             <br/>
             <br/>

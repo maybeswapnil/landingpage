@@ -15,11 +15,14 @@ function Projects(props) {
   return (
       <div className="projects">
         <div className="project-image-div">
-            <img src={props.url} className="project-image"/>
-            
-            <a href='https://satellite-tracker-3d.netlify.app/' target='_blank'>
+          <p className='underlined'>{props.description}</p>
+          <h1>{props.name}</h1>
+          <p className='des-para'>{props.descriptionpara}</p>
+            {/* <a href='https://satellite-tracker-3d.netlify.app/' target='_blank'>
                 <button className='resume-button' value='download' style={{backgroundColor: 'black', marginTop:'3vmin', width:'10vmin', height:'5vmin'}}>Open</button>
-            </a> 
+            </a>  */}
+          <p className='underlined-github'><a href={props.url} target='_blank' id='git-link'>github</a></p>
+
         </div>
       </div>
   );

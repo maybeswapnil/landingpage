@@ -25,7 +25,8 @@ h2 a:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -33,7 +34,7 @@ h2 a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 6px var(--font-color-hover);
+  box-shadow: inset 0 0 12px rgb(119, 119, 119);
 }
 
 .Header {
