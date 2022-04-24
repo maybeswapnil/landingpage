@@ -97,11 +97,6 @@ function NowPlayingPopup(props) {
         axios('https://spotify-playing-now.herokuapp.com/spotify/nowplaying').then((data) => {
             setSpotifyData(data.data)
         })
-        setInterval(() => {
-            axios('https://spotify-playing-now.herokuapp.com/spotify/nowplaying').then((data) => {
-                setSpotifyData(data.data)
-            })
-        }, 5000)
   }, [mobileNavbarState])
 
   return (

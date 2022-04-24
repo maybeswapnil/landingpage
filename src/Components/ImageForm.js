@@ -7,6 +7,7 @@ import resume from '../Assets/swapnil-sharma-resume.pdf';
 
 
 import stackoverflow from '../Assets/stackoverflow.png'
+import axios from 'axios';
 function ImageForm(props) {
 
   const [email,  setEmail] = useState('')
@@ -23,6 +24,35 @@ function ImageForm(props) {
      m.current.value = ''
      n.current.value = ''
      o.current.value = ''
+ }
+
+ function submit() {
+    var data = JSON.stringify({
+    "email": email,
+    "message": extraInformation,
+    "time": new Date().toString(),
+    "userinfo": {
+        "name": firstName + ' ' + lastName
+    }
+    });
+
+    var config = {
+        method: 'post',
+        url: 'https://new-api-name.herokuapp.com/portefeuille',
+        headers: { 
+            'Content-Type': 'application/json'
+        },
+        data : data
+    };
+
+    axios(config)
+        .then(function (response) {
+            console.log(JSON.stringify(response.data));
+            props.close()
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
  }
 
   return (
@@ -48,7 +78,7 @@ function ImageForm(props) {
         </div>
         <div className="content-submit">
                 <button className="button-13" id='clear-button' onClick={() => clearFunction()} role="button">Clear</button>
-                <button className="button-13" id='submit-button' role="button" onClick={() => props.close()}>Submit</button>
+                <button className="button-13" id='submit-button' role="button" onClick={() => submit()}>Submit</button>
         </div>
         <br/>
         <p id='random-sentence' style={{color:'black'}}>If you're visiting this page, you're likely here because you're searching for a random sentence. Sometimes a random word just isn't enough, and that is where the random sentence generator comes into play. By inputting the desired number, you can make a list of as many random sentences as you want or need.</p>
