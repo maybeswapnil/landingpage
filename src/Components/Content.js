@@ -38,7 +38,7 @@ function Content(props) {
             <div className='main-content-images-div'>
                 {image.map((r) => {
                     return(
-                        <img src={r} className='main-content-images'/>
+                        <a href={r} target='_blank'><img src={r} className='main-content-images'/></a>
                     )
                 })}
             </div>  

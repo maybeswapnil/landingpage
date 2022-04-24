@@ -4,7 +4,6 @@ import OrderForm from './OrderForm';
 import './PopupImage.css';
 
 function PopupImage(props) {
-    console.log('asdasda', props)
   const [mobileNavbarState,  setMobileNavbarState] = useState(false)
 
   return (
