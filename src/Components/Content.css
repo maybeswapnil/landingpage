@@ -13,13 +13,11 @@
 }
 
 .Content {
-    margin-top: -20vmin;
 }
 
 .main-content {
     text-align: center;
     justify-content: center;
-    margin-top: -2vh;
     height: 25vh;
 }
 .main-content-title {

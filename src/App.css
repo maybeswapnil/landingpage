@@ -50,7 +50,6 @@ h2 a:hover {
 
 .App {
   font-family: var(--font-style);
-  height: 440vh;
 }
 .AppDark {
   font-family: var(--font-style);

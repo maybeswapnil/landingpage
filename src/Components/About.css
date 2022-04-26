@@ -8,26 +8,23 @@
   }
 
 .About {
-    height: 90vh;
+    height: 100%;
 }
 .AboutDark {
     height: 90vh;
 }
 .main-about-div {
-    margin-top: -100vmin;
     display: flex;
     flex-direction: column;
     transform: translate(16%, 50%);
     width: 76%;
+    margin-top: -900px;
 }
 
 @media only screen and (max-width: 1400px) { 
     .About {
-        height: 90vh;
     }
     .main-about-div {
-        margin-top: -50vmin;
-
         display: flex;
         flex-direction: column;
         transform: translate(7%, 50%);
@@ -37,10 +34,9 @@
 
 @media only screen and (max-width: 700px) { 
     .About {
-        height: 90vh;
     }
     .main-about-div {
-        margin-top: -57em;
+        margin-top: -1150px;
 
         display: flex;
         flex-direction: column;

@@ -23,13 +23,13 @@ function App() {
           <div className='spinner-div' style={{backgroundColor: 'white'}}>
             <Spinner s/>
           </div>:
-          <>
+          <div style={{display: 'flex', flexDirection:'column'}}>
             <Header mode={darkMode} changeMode={setDarkMode}/>
             <Intro mode={darkMode}/>
             <Content mode={darkMode}/>
             <About mode={darkMode}/>
             <Footer mode={darkMode}/>
-          </>
+          </div>
         }
     </div>
   );
