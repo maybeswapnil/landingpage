@@ -21,7 +21,7 @@ function App() {
     <div className={darkMode?"App":"AppDark"}>
         {spinner?
           <div className='spinner-div' style={{backgroundColor: 'white'}}>
-            <Spinner s/>
+            <Spinner />
           </div>:
           <div style={{display: 'flex', flexDirection:'column'}}>
             <Header mode={darkMode} changeMode={setDarkMode}/>
