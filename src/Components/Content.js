@@ -25,7 +25,6 @@ function Content(props) {
     setPopupImageStateValue(val);
     popupStateChangerFunction();
   }
-    
   return (
     <div id='content' className={props.mode?"Content":"Content"}>
         <header className='main-content' id={props.mode?"Content":"ContentDark"} style={{color:'black'}}>

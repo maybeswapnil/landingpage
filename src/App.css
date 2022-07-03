@@ -14,6 +14,7 @@ a {
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 h2 a {
