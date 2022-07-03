@@ -120,7 +120,9 @@ function About(props) {
             <br/>
             <br/>
             <h1 className='main-about'>Projects</h1>
-            <p className='main-about'>I'm a self-taught web developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I'm focused on the backend development.</p>
+            <p className='main-about'>Professional FullStack Software Engineer, specialized in web applications development using JavaScript frameworks. Experienced in creating. maintaining 
+and implementing source code that made up applications back-end functionalities and also in designing and developing user interfaces, testing, and
+debugging. Proven ability in optimizing web functionality that improves data retrieval and workflow efficiencies</p>
             <br/>
             <div className='about-project-main-div'>
                 <Project url='https://github.com/maybeswapnil/Satellite-Tracker-3D' name='Satellite Tracker' description='#reactjs #express #n2yo' descriptionpara='Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env.'/>
