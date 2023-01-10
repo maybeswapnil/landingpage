@@ -1,111 +1,25 @@
 import axios from 'axios';
-import React,{useState, useEffect} from 'react'
-import equalizer from '../Assets/Equalizer.gif';
+import React,{useState, useEffect} from 'react';
 import './NowPlayingPopup.scss';
 import {ReactComponent as Spinner} from '../Assets/spinner.svg'
-
+import spotifyConfig from "../Config/spotify.json";
+import config from '../Config/variables.json'
 function NowPlayingPopup(props) {
 
   const [mobileNavbarState,  setMobileNavbarState] = useState(false)
   const [loading,  setLoading] = useState(false)
   const [error,  setError] = useState(false)
-  const [spotifyData,  setSpotifyData] = useState({
-    "album": {
-        "album_type": "single",
-        "artists": [
-            {
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/23fqKkggKUBHNkbKtXEls4"
-                },
-                "href": "https://api.spotify.com/v1/artists/23fqKkggKUBHNkbKtXEls4",
-                "id": "23fqKkggKUBHNkbKtXEls4",
-                "name": "",
-                "type": "artist",
-                "uri": "spotify:artist:23fqKkggKUBHNkbKtXEls4"
-            }
-        ],
-        "available_markets": {},
-        "external_urls": {
-            "spotify": "https://open.spotify.com/album/2sPYPyDFwgi1jrRTGhoxq2"
-        },
-        "href": "https://api.spotify.com/v1/albums/2sPYPyDFwgi1jrRTGhoxq2",
-        "id": "2sPYPyDFwgi1jrRTGhoxq2",
-        "images": [
-            {
-                "height": 640,
-                "url": "https://cdn.pixabay.com/photo/2018/05/08/21/29/spotify-3384019_960_720.png",
-                "width": 640
-            },
-            {
-                "height": 300,
-                "url": "https://i.scdn.co/image/ab67616d00001e02a333559091297eda04eba27c",
-                "width": 300
-            },
-            {
-                "height": 64,
-                "url": "https://i.scdn.co/image/ab67616d00004851a333559091297eda04eba27c",
-                "width": 64
-            }
-        ],
-        "name": "Stargazing - EP",
-        "release_date": "2017-09-21",
-        "release_date_precision": "day",
-        "total_tracks": 5,
-        "type": "album",
-        "uri": "spotify:album:2sPYPyDFwgi1jrRTGhoxq2"
-    },
-    "artists": [
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/23fqKkggKUBHNkbKtXEls4"
-            },
-            "href": "https://api.spotify.com/v1/artists/23fqKkggKUBHNkbKtXEls4",
-            "id": "23fqKkggKUBHNkbKtXEls4",
-            "name": "Kygo",
-            "type": "artist",
-            "uri": "spotify:artist:23fqKkggKUBHNkbKtXEls4"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/4xnihxcoXWK3UqryOSnbw5"
-            },
-            "href": "https://api.spotify.com/v1/artists/4xnihxcoXWK3UqryOSnbw5",
-            "id": "4xnihxcoXWK3UqryOSnbw5",
-            "name": "",
-            "type": "artist",
-            "uri": ""
-        }
-    ],
-    "available_markets": {},
-    "disc_number": 1,
-    "duration_ms": '',
-    "explicit": false,
-    "external_ids": {
-        "isrc": ""
-    },
-    "external_urls": {
-        "spotify": ""
-    },
-    "href": "",
-    "id": "",
-    "is_local": false,
-    "name": "User Away",
-    "popularity": false,
-    "preview_url": "",
-    "track_number": 4,
-    "type": "",
-    "uri": ""
-})
+  const [spotifyData,  setSpotifyData] = useState(spotifyConfig)
   useEffect(() => {
-      setLoading(true)
-        axios('https://spotify-playing-now.herokuapp.com/spotify/nowplaying').then((data) => {
+        setLoading(true);
+        axios(config.SPOTIFY_URL).then((data) => {
             setSpotifyData(data.data)
             setLoading(false)
         }).catch(() => {
             setLoading(false)
             setError(true)
             // props.close()
-        })
+        });
   }, [mobileNavbarState])
 
   useEffect(() => {

@@ -1,0 +1,4 @@
+{
+    "SPOTIFY_URL": "https://spotify-playing-now.herokuapp.com/spotify/nowplaying",
+    "SHOP_URL": "https://mycanvasstore.netlify.app/"
+}
