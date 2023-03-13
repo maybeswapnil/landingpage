@@ -44,7 +44,6 @@ function Content(props) {
                 })}
             </div>  
         </div> 
-    
         {popupImageState?
             <PopupImage url={popupImageStateValue} close={popupStateChangerFunction} imageform={false} />
         :null}
