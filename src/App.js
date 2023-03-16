@@ -7,22 +7,36 @@ import {ReactComponent as Spinner} from './Assets/spinner.svg'
 import Footer from './Components/Footer';
 import About from './Components/About';
 import Skills from './Components/Skills';
+import LoadingBar from "react-top-loading-bar";
 
 function App() {
 
   const [spinner,  setSpinner] = useState(true)
   const [darkMode,  setDarkMode] = useState(true)
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-      setTimeout(() => setSpinner(false), 1000)
-  }, [])
+    setProgress(20);
+    setTimeout(() => {
+      setProgress(50);
+    }, 500);
+    setTimeout(() => {
+      setProgress(80);
+    }, 1000);
+    setTimeout(() => {
+      setProgress(100);
+      setSpinner(false);
+    }, 1500);
+  }, []);
 
   return (
     <div className={darkMode?"App":"AppDark"}>
         {spinner?
-          <div className='spinner-div' style={{backgroundColor: 'white'}}>
-            <Spinner />
-          </div>:
+           <LoadingBar
+           color="black"
+           progress={progress}
+           onLoaderFinished={() => setProgress(0)}
+         />:
           <div style={{display: 'flex', flexDirection:'column'}}>
             <Header mode={darkMode} changeMode={setDarkMode}/>
             <Intro mode={darkMode}/>
@@ -37,3 +51,4 @@ function App() {
 }
 
 export default App;
+

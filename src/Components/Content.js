@@ -33,7 +33,7 @@ function Content(props) {
             <br/>
             <button class="button-52" role="button" onClick={(e) => popupStateValueChangerFunction(image[Math.floor(Math.random()*10)])}>Order Prints</button>
         </header>
-        <div className='image-center'>
+        {/* <div className='image-center'>
             <div className='main-content-images-div'>
                 {image.map((r) => {
                     return(
@@ -41,11 +41,11 @@ function Content(props) {
                     )
                 })}
             </div>  
-        </div> 
+        </div>  */}
     
-        {popupImageState?
+        {/* {popupImageState?
             <PopupImage url={popupImageStateValue} close={popupStateChangerFunction} imageform={false} />
-        :null}
+        :null} */}
         <br/>      
         <br/>      
     </div>
