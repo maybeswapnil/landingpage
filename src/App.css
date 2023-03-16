@@ -7,6 +7,7 @@
   --font-color-hover: #f1d11a;
   --background-color: white;
   --font-style: 'Source Sans Pro', sans-serif;
+  text-rendering: optimizeLegibility;
 }
 a {
   text-decoration: none;
