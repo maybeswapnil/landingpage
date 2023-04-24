@@ -25,6 +25,8 @@ function App() {
     }, 1000);
     setTimeout(() => {
       setProgress(100);
+    }, 1000);
+    setTimeout(() => {
       setSpinner(false);
     }, 1500);
   }, []);
