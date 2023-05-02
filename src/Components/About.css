@@ -8,8 +8,13 @@
   }
 
 .About {
-    height: 100%;
+    height: 100vh;
 }
+
+.End {
+    font-size: 20px;
+}
+
 .AboutDark {
     height: 90vh;
 }
@@ -18,7 +23,7 @@
     flex-direction: column;
     transform: translate(16%, 50%);
     width: 76%;
-    margin-top: -900px;
+    margin-top: -1095px;
 }
 
 @media only screen and (max-width: 1400px) { 

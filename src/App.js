@@ -1,9 +1,9 @@
 import './App.css';
-import ReactComponent, {useState, useEffect} from 'react'
+import ReactComponent, { useState, useEffect } from 'react'
 import Header from './Components/Header';
 import Intro from './Components/Intro';
 import Content from './Components/Content';
-import {ReactComponent as Spinner} from './Assets/spinner.svg'
+import { ReactComponent as Spinner } from './Assets/spinner.svg'
 import Footer from './Components/Footer';
 import About from './Components/About';
 import Skills from './Components/Skills';
@@ -11,8 +11,8 @@ import LoadingBar from "react-top-loading-bar";
 
 function App() {
 
-  const [spinner,  setSpinner] = useState(true)
-  const [darkMode,  setDarkMode] = useState(true)
+  const [spinner, setSpinner] = useState(true)
+  const [darkMode, setDarkMode] = useState(true)
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -32,21 +32,21 @@ function App() {
   }, []);
 
   return (
-    <div className={darkMode?"App":"AppDark"}>
-        {spinner?
-           <LoadingBar
-           color="black"
-           progress={progress}
-           onLoaderFinished={() => setProgress(0)}
-         />:
-          <div style={{display: 'flex', flexDirection:'column'}}>
-            <Header mode={darkMode} changeMode={setDarkMode}/>
-            <Intro mode={darkMode}/>
-            <Content mode={darkMode}/>
-            <About mode={darkMode}/>
-            <Footer mode={darkMode}/>
-          </div>
-        }
+    <div className={darkMode ? "App" : "AppDark"}>
+      {spinner ?
+        <LoadingBar
+          color="black"
+          progress={progress}
+          onLoaderFinished={() => setProgress(0)}
+        /> :
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <Header mode={darkMode} changeMode={setDarkMode} />
+          <Intro mode={darkMode} />
+          <Content mode={darkMode} />
+          <About mode={darkMode} />
+          <Footer mode={darkMode} />
+        </div>
+      }
     </div>
   );
 

@@ -4,8 +4,6 @@ import github from '../Assets/github.png'
 import linkedin from '../Assets/linkedin.png'
 import pexels from '../Assets/pexels.png';
 import resume from '../Assets/swapnil-sharma-resume.pdf';
-
-
 import stackoverflow from '../Assets/stackoverflow.png'
 const image = { 
     0: 'https://images.unsplash.com/photo-1588417319304-8ff124d3b406?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=407&q=80',
@@ -54,17 +52,8 @@ function Intro(props) {
                 <a id="up" href="https://www.pexels.com/@hellochemo"><img id='github' src={pexels} /></a>
             </div>
             <br/>
-            <a href={resume} style={{color: 'white'}} download="swapnil-resume.pdf"><button class="button-30" role="button">Resume</button></a>
+            <a href={resume} style={{color: 'white'}} download="swapnil-resume.pdf"><button class="button-30" role="button">Download Resume</button></a>
         </header>
-        {/* <div className='image-body' id='home'>
-            <img src={'https://i.imgur.com/NIKjQYj.png'} className='full-image-two' />
-        </div> */}
-        {/* <div className='image-body-two'>
-            <img src={image[1]} className='full-image-two' />
-        </div>
-        <div className='image-body-three'>
-            <img src={image[2]} className='full-image-three' />
-        </div> */}
     </div>
   );
 }

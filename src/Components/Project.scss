@@ -11,7 +11,7 @@
 
 .projects {
     width: 35vh;
-    height: 40vh;
+    height: 30vh;
     margin: 1vmin;
     border-radius: 1rem;
     padding: 2vmin;
@@ -31,8 +31,15 @@
 }
 
 .underlined-github {
+    bottom: 10px;
     font-weight: 900;
-    text-decoration: underline;
+}
+
+.underlined-github:hover {
+    bottom: 10px;
+    font-weight: 900;
+    cursor:context-menu;
+    color: red;
 }
 
 #git-link {
