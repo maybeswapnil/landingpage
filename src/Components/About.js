@@ -136,7 +136,7 @@ function About(props) {
                 <br />
                 <br />
                 <br />
-                <h1 className='main-about end' id='about' style={{ fontSize: "230%" }}>Thanks For Visiting ( swapnil.sharma1998@gmail.com )</h1>
+                <h1 className='main-about end' id='about' style={{ fontSize: "230%" }}>Thanks For Visiting</h1>
                 <div className="social-media">
                     <a id="up" href="https://github.com/maybeswapnil"><img id='github' src={github} /></a>
                     <a id="up" href="https://stackoverflow.com/users/11640117/swapnil-sharma"><img id='github' src={stackoverflow} /></a>
