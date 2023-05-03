@@ -130,6 +130,7 @@ function About(props) {
                     <a href="https://csvtodotjson.netlify.app/"><Project url='https://github.com/maybeswapnil/CSV-Parser' name='CSVtoJSONParser' description='#reactjs #express' descriptionpara='Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env.' /></a>
                     <a href="https://github.com/maybeswapnil/String-Calculator-TDD-Kata"><Project url='https://github.com/maybeswapnil/String-Calculator-TDD-Kata' name='TDD Kata' description='#javascript #mocha #chai' descriptionpara='Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env.' /></a>
                     <a href="https://github.com/maybeswapnil/a"><Project url='https://github.com/maybeswapnil/  ' name='S3 Unzip Module' description='#javascript #nodejs #npm' descriptionpara='Node package that can unzip the zip file on S3. Create an AWS Lambda function, name it, and zip all files from this package to upload the code (including node_modules). The function defaults to deleting the zip file after its been decompressed and verbose messages logged to CloudWatch.' /></a>
+                    <a href="https://github.com/maybeswapnil/a"><Project url='https://github.com/maybeswapnil/  ' name='Sequalize Comment' description='#javascript #nodejs #npm' descriptionpara='A npm package to add comment to your query in Sequalize ORM. Developer needs to import and enclose the sequalize instance by it. Later developer can add comment in the respective model or query.' /></a>
                     <a href="https://github.com/maybeswapnil/a"><Project url='https://github.com/maybeswapnil/  ' name='Mongo to MySQL Module' description='#javascript #nodejs #npm' descriptionpara='A Node.js ETL script to migrate Mongo data to MySQL, mapping MongoDB Objects to MySQL tables.' /></a>
                     <a href="https://github.com/maybeswapnil/a"><Project url='https://github.com/maybeswapnil/  ' name='Gmail to MySQL Module' description='#javascript #nodejs #npm' descriptionpara='A Node.js ETL script to migrate millions of emails to S3.' /></a>
                 </div>
@@ -137,7 +138,7 @@ function About(props) {
                 <br />
                 <br />
                 <h1 className='main-about end' id='about' style={{ fontSize: "230%" }}>Thanks For Visiting</h1>
-                <div className="social-media">
+                <div className="social-media">  
                     <a id="up" href="https://github.com/maybeswapnil"><img id='github' src={github} /></a>
                     <a id="up" href="https://stackoverflow.com/users/11640117/swapnil-sharma"><img id='github' src={stackoverflow} /></a>
                     <a id="up" href="https://www.linkedin.com/in/swapnil5harma/"><img id='github' src={linkedin} /></a>
