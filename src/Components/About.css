@@ -23,7 +23,7 @@
     flex-direction: column;
     transform: translate(16%, 50%);
     width: 76%;
-    margin-top: -1095px;
+    margin-top: -1275px;
 }
 
 @media only screen and (max-width: 1400px) { 
@@ -41,8 +41,7 @@
     .About {
     }
     .main-about-div {
-        margin-top: -1150px;
-
+        margin-top: -1450px;
         display: flex;
         flex-direction: column;
         transform: translate(7%, 50%);
