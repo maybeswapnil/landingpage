@@ -2,13 +2,13 @@
     "projects": [
         {
             "url": "https://github.com/maybeswapnil/Satellite-Tracker-3D",
-            "name": "Satellite Tracker",
+            "name": "Spotify API",
             "description": "#reactjs #express #n2yo",
             "descriptionpara": "Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env."
         },
         {
             "url": "https://github.com/maybeswapnil/Spotify-Playing-Now",
-            "name": "Spotify API",
+            "name": "Satellite Tracker",
             "description": "#spotifyapi #express #nodejs",
             "descriptionpara": "This App displays the real time information and location of the Satellites above you. We use N2YO APIs to extract data, that data is used to calculate the real x, y, z coordinates. After that the App displays the sphere around the globe rotating (distance between the Satellites and Earth is relative)."
         },
