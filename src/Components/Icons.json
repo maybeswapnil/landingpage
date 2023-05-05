@@ -58,5 +58,25 @@
     {
         "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
         "name": "Git"
+    },
+    {
+        "src": "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/ruby/ruby.png",
+        "name": "Ruby on Rails"
+    },
+    {
+        "src": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ip7ork2m951siwgpkety.png",
+        "name": "AWS S3"
+    },
+    {
+        "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+        "name": "npm"
+    },
+    {
+        "src": "https://cdn.worldvectorlogo.com/logos/aws-lambda.svg",
+        "name": "AWS Lambda"
+    },
+    {
+        "src": "https://www.thelambdablog.com/img/eventbridge-logo.png",
+        "name": "AWS Event Bridge"
     }
 ]

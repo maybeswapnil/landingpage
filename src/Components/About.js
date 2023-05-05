@@ -13,27 +13,12 @@ function About(props) {
         <div className={props.mode ? "About main-about-div" : "AboutDark main-about-div"}>
             <div>
                 <h1 className='main-about' id='about'>About Me</h1>
-                <p className='main-about'>Web Application Developer with experience in creating. maintaining
-                    and implementing source code that made up applications back-end functionalities and
-                    also in designing and developing user interfaces, testing, and debugging.
-                    Proven ability in optimizing web functionality that improves data retrieval and
-                    workflow efficiencies.
-                </p>
-                <p className='main-about'>Working on ReactJS and NodeJS for 1+ year now. Have worked
-                    on development projects as well as migration projects. Developed and maintained 20+ Rest
-                    APIs. Also volunteered to tap my web development expertise to develop a portfolio
-                    dashboard for the internal team and an internal platform for generating
-                    graphs and performance results.
-                    The corporate experience helped me better understand the need and skill of translating
-                    real-time problems into business challenges that are strongly
-                    coupled with technology, as these applications helped decrease the total cost to the project team
-                </p>
-                <p className='main-about'>Front-end for project-specific portals. The Application was made
-                    using ReactJS to extract data from server logs and display it in readable form for analysis.
-                    Developed login interface along with backend architecture using Express, it allows
-                    storing user activity in MySQL database.
-                    Worked on various REST APIs and have an understanding of various headers used. Used
-                    UNIX to monitor the server logs for API requests made.
+                <p className='main-about'>
+                    I am a skilled software engineer with experience in a wide range of programming languages, frameworks, and technologies. My expertise in front-end development includes ReactJS, Redux, JS(ES6+), HTML5, CSS3, SCSS, Framer-Motion (Animation), and Recharts. I am also experienced in server-side JavaScript using Node.js and Express.
+                    In addition to my technical skills, I have extensive experience with various database engine technologies, including Oracle, MySQL, and MongoDB. I am proficient in RDBMS Development and SQL, and I have experience with data structures and algorithms through platforms like HackerRank and Leetcode.
+                <p className='main-about'>As a software engineer, I understand the importance of efficient workflow and version control. I am experienced with Git, npm, and GitHub for version control and package management. I have also worked with AWS (Compute, Storage, Network & Content Delivery), Netlify, Postman, SOAP UI, Dynatrace, Splunk, and Heroku for deployment and monitoring.
+                        My experience with developing aesthetic wireframes, UX flows, mock-ups, and prototypes using Adobe XD allows me to work collaboratively with design teams and create visually stunning applications.
+                        In summary, I am a skilled software engineer with experience in various programming languages, frameworks, and technologies. My focus on front-end development, server-side JavaScript, and database engine technologies allows me to deliver efficient and optimized software solutions. My experience with standard tooling, deployment, and monitoring tools ensures that my applications are always up to date and running smoothly. </p>
                 </p>
             </div>
             <div>
@@ -65,10 +50,10 @@ function About(props) {
                 <h1 className='main-about end' id='about' style={{ fontSize: "230%" }}>Thanks For Visiting</h1>
                 <p className='main-about'> swapnil.sharma1998@gmail.com | +91 9755448822</p>
                 <SocialMedia />
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                <br />
+                <br />
+                <br />
+                <br />
             </div>
         </div>
     );
