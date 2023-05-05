@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div className={darkMode ? "App" : "AppDark"}>
+      <Header mode={darkMode} changeMode={setDarkMode} />
       {spinner ?
         <LoadingBar
           color="black"
@@ -40,7 +41,6 @@ function App() {
           onLoaderFinished={() => setProgress(0)}
         /> :
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <Header mode={darkMode} changeMode={setDarkMode} />
           <Intro mode={darkMode} />
           <Content mode={darkMode} />
           <About mode={darkMode} />

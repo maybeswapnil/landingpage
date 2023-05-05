@@ -5,6 +5,7 @@ import linkedin from '../Assets/linkedin.png'
 import pexels from '../Assets/pexels.png';
 import resume from '../Assets/swapnil-sharma-resume.pdf';
 import stackoverflow from '../Assets/stackoverflow.png'
+import SocialMedia from './SocialMedia';
 const image = { 
     0: 'https://images.unsplash.com/photo-1588417319304-8ff124d3b406?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=407&q=80',
     1: 'https://images.unsplash.com/photo-1639499683640-1f1cf29eb065?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=407&q=80',
@@ -45,12 +46,7 @@ function Intro(props) {
             </div>
             <br/>
             <p className='main-intro-p' id={props.mode?'':'dark-mode-onlyfontcolor'}>Web Application Developer with experience in creating. maintaining and implementing source code that made up applications back-end functionalities.</p>
-            <div className="social-media">
-                <a id="up" href="https://github.com/maybeswapnil"><img id='github' src={github} /></a>
-                <a id="up" href="https://stackoverflow.com/users/11640117/swapnil-sharma"><img id='github' src={stackoverflow} /></a>
-                <a id="up" href="https://www.linkedin.com/in/swapnil5harma/"><img id='github' src={linkedin} /></a>
-                <a id="up" href="https://www.pexels.com/@hellochemo"><img id='github' src={pexels} /></a>
-            </div>
+            <SocialMedia />
             <br/>
             <a href={resume} style={{color: 'white'}} download="swapnil-resume.pdf"><button class="button-30" role="button">Download Resume</button></a>
         </header>

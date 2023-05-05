@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "url": "https://github.com/maybeswapnil/Satellite-Tracker-3D",
+            "name": "Satellite Tracker",
+            "description": "#reactjs #express #n2yo",
+            "descriptionpara": "Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env."
+        },
+        {
+            "url": "https://github.com/maybeswapnil/Spotify-Playing-Now",
+            "name": "Spotify API",
+            "description": "#spotifyapi #express #nodejs",
+            "descriptionpara": "This App displays the real time information and location of the Satellites above you. We use N2YO APIs to extract data, that data is used to calculate the real x, y, z coordinates. After that the App displays the sphere around the globe rotating (distance between the Satellites and Earth is relative)."
+        },
+        {
+            "url": "https://github.com/maybeswapnil/CSV-Parser",
+            "name": "CSVtoJSONParser",
+            "description": "#reactjs #express",
+            "descriptionpara": "Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env."
+        },
+        {
+            "url": "https://github.com/maybeswapnil/String-Calculator-TDD-Kata",
+            "name": "TDD Kata",
+            "description": "#javascript #mocha #chai",
+            "descriptionpara": "Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env."
+        },
+        {
+            "url": "https://github.com/maybeswapnil/  ",
+            "name": "S3 Unzip Module",
+            "description": "#javascript #nodejs #npm",
+            "descriptionpara": "Node package that can unzip the zip file on S3. Create an AWS Lambda function, name it, and zip all files from this package to upload the code (including node_modules). The function defaults to deleting the zip file after its been decompressed and verbose messages logged to CloudWatch."
+        },
+        {
+            "url": "https://github.com/maybeswapnil/  ",
+            "name": "Sequalize Comment",
+            "description": "#javascript #nodejs #npm",
+            "descriptionpara": "A npm package to add comment to your query in Sequalize ORM. Developer needs to import and enclose the sequalize instance by it. Later developer can add comment in the respective model or query."
+        },
+        {
+            "url": "https://github.com/maybeswapnil/  ",
+            "name": "Mongo to MySQL Module",
+            "description": "#javascript #nodejs #npm",
+            "descriptionpara": "A Node.js ETL script to migrate Mongo data to MySQL, mapping MongoDB Objects to MySQL tables."
+        },
+        {
+            "url": "https://github.com/maybeswapnil/  ",
+            "name": "Gmail to MySQL Module",
+            "description": "#javascript #nodejs #npm",
+            "descriptionpara": "A Node.js ETL script to migrate millions of emails to S3."
+        }
+    ]
+}
