@@ -15,12 +15,12 @@
 
 .Content {
     margin-top: 8vmin;
+    margin-bottom: -20vh;
 }
 
 .main-content {
     text-align: center;
     justify-content: center;
-    height: 25vh;
 }
 .main-content-title {
     font-size: 3vmin;
