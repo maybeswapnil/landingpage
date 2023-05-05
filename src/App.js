@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className={darkMode ? "App" : "AppDark"}>
-      <Header mode={darkMode} changeMode={setDarkMode} />
+      {!spinner ? <Header mode={darkMode} changeMode={setDarkMode} /> : null}
       {spinner ?
         <LoadingBar
           color="black"
