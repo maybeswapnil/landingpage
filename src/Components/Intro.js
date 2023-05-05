@@ -45,7 +45,7 @@ function Intro(props) {
                 <h1 className='main-intro-description' id={props.mode?'':'dark-mode-onlyfontcolor'}>{'I am a ' + descDisplay}</h1>
             </div>
             <br/>
-            <p className='main-intro-p' id={props.mode?'':'dark-mode-onlyfontcolor'}>Web Application Developer with experience in creating. maintaining and implementing source code that made up applications back-end functionalities.</p>
+            <p className='main-intro-p' id={props.mode?'':'dark-mode-onlyfontcolor'}>Software Developement Engineer with experience in creating. maintaining and implementing source code that made up applications back-end functionalities.</p>
             <SocialMedia />
             <br/>
             <a href={resume} style={{color: 'white'}} download="swapnil-resume.pdf"><button class="button-30" role="button">Download Resume</button></a>
