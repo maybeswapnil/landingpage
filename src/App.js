@@ -36,7 +36,7 @@ function App() {
       {!spinner ? <Header mode={darkMode} changeMode={setDarkMode} /> : null}
       {spinner ?
         <LoadingBar
-          color="#ffe54c"
+          color="black"
           progress={progress}
           onLoaderFinished={() => setProgress(0)}
         /> :
