@@ -20,6 +20,9 @@
     cursor: pointer;
 }
 
+div.outer { position: relative; height: 44px; }
+div.outer img { position: absolute; right: 0; bottom: 0; }
+
 .projects:hover {
     box-shadow: rgba(136, 136, 136, 0.3) 0px 1px 30px;
 
