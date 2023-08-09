@@ -1,7 +1,4 @@
-import axios from 'axios';
-import React, { useState, useEffect } from 'react'
-import equalizer from '../Assets/Equalizer.gif';
-import projectimage from '../Assets/projects.png';
+import React, { useState, useEffect } from 'react';
 import image1 from '../Assets/image (1).svg';
 import image2 from '../Assets/image (2).svg';
 import image3 from '../Assets/image (3).svg';

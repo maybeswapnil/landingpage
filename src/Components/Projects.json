@@ -1,37 +1,37 @@
 {
     "projects": [
         {
-            "url": "https://github.com/maybeswapnil/Satellite-Tracker-3D",
+            "url": "https://github.com/maybeswapnil/Spotify-Playing-Now",
             "name": "Spotify API",
             "description": "#reactjs #express #n2yo",
             "descriptionpara": "Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env."
         },
         {
-            "url": "https://github.com/maybeswapnil/Spotify-Playing-Now",
+            "url": "https://satellite-tracker-3d.netlify.app/",
             "name": "Satellite Tracker",
             "description": "#spotifyapi #express #nodejs",
-            "descriptionpara": "This App displays the real time information and location of the Satellites above you. We use N2YO APIs to extract data, that data is used to calculate the real x, y, z coordinates. After that the App displays the sphere around the globe rotating (distance between the Satellites and Earth is relative)."
+            "descriptionpara": "This App displays the real time information and location of the Satellites above you. We use N2YO APIs to extract data, that data is used to calculate the real x, y, z coordinates."
         },
         {
-            "url": "https://github.com/maybeswapnil/CSV-Parser",
+            "url": "https://csvtodotjson.netlify.app/",
             "name": "CSVtoJSONParser",
             "description": "#reactjs #express",
-            "descriptionpara": "Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env."
+            "descriptionpara": "CSV-Parser helps you quickly convert popular data formats to the format you need. Data pasted and converted remains local on your computer."
         },
         {
-            "url": "https://github.com/maybeswapnil/String-Calculator-TDD-Kata",
-            "name": "TDD Kata",
+            "url": "https://veryshortpath.netlify.app/",
+            "name": "Very Short Path",
             "description": "#javascript #mocha #chai",
-            "descriptionpara": "Reference Application to connect to spotify API to request currently playing songs. Requires Client_ID and Client_Secret from Spotify. Download and change the values in ./credentials.env."
+            "descriptionpara": "This is based on Dijkstra's Algorithm, it finds the shortest path between a given node (which is called the source node) and all other nodes in a graph."
         },
         {
             "url": "https://github.com/maybeswapnil/  ",
             "name": "S3 Unzip Module",
             "description": "#javascript #nodejs #npm",
-            "descriptionpara": "Node package that can unzip the zip file on S3. Create an AWS Lambda function, name it, and zip all files from this package to upload the code (including node_modules). The function defaults to deleting the zip file after its been decompressed and verbose messages logged to CloudWatch."
+            "descriptionpara": "Node package that can unzip the zip file on S3. Create an AWS Lambda function, name it, and zip all files from this package to upload the code (including node_modules)."
         },
         {
-            "url": "https://github.com/maybeswapnil/  ",
+            "url": "https://www.npmjs.com/package/@caratlane/sqc",
             "name": "Sequalize Comment",
             "description": "#javascript #nodejs #npm",
             "descriptionpara": "A npm package to add comment to your query in Sequalize ORM. Developer needs to import and enclose the sequalize instance by it. Later developer can add comment in the respective model or query."
