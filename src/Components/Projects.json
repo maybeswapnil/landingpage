@@ -38,15 +38,15 @@
         },
         {
             "url": "https://github.com/maybeswapnil/  ",
-            "name": "Mongo to MySQL Module",
+            "name": "Mongo to MySQL",
             "description": "#javascript #nodejs #npm",
-            "descriptionpara": "A Node.js ETL script to migrate Mongo data to MySQL, mapping MongoDB Objects to MySQL tables."
+            "descriptionpara": "A Node.js ETL script to migrate Mongo data to MySQL, mapping MongoDB Objects to MySQL tables. Used multi threading concepts to maximise trnsfer speeds between the DBs"
         },
         {
             "url": "https://github.com/maybeswapnil/  ",
-            "name": "Gmail to MySQL Module",
+            "name": "Gmail to MySQL",
             "description": "#javascript #nodejs #npm",
-            "descriptionpara": "A Node.js ETL script to migrate millions of emails to S3."
+            "descriptionpara": "A Node.js ETL script to migrate millions of emails to S3. This Script utilised threading concepts to maximise email retrival and consecutive insert queries"
         }
     ]
 }

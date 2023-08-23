@@ -28,7 +28,6 @@ div.outer img { position: absolute; right: 18px; bottom: 0; }
 .projects:hover {
     box-shadow: rgba(136, 136, 136, 0.3) 0px 1px 30px;
     transition: box-shadow 0.3s ease-in-out;
-
     border: 2px dashed var(--color-hover);
     transition: border 0.3s ease-in-out;
 }
