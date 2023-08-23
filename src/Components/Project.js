@@ -33,12 +33,13 @@ function Projects(props) {
       <div className="project-image-div">
         <p className='underlined'>{props.description}</p>
         <h1>{props.name}</h1>
-        <p className='des-para'>{props.descriptionpara}</p>
+        
+        {props.descriptionpara.length>150?<p className='des-para'>{props.descriptionpara.slice(0, 150) + " ..."}</p>:<p className='des-para'>{props.descriptionpara}</p>}
         <p className='underlined-github'><a href={props.url} target='_blank' id='git-link'>Github</a></p>
-        <div class="outer">
-          <img src={ary[props.index]} width={'60px'} />
-        </div>
       </div>
+        <div className="outer">
+          <img src={ary[props.index]} width={'60px'} height={'60px'}/>
+        </div>
     </div>
   );
 }
