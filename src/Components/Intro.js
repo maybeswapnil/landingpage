@@ -13,7 +13,7 @@ const image = {
 }
 
 function Intro(props) {
- const data = ['Frontend Developer..', 'Backend Developer..', 'Fullstack Developer..']
+ const data = ['Frontend Developer..', 'Backend Developer..', 'Fullstack Developer..', 'Photographer....', 'FPV Drone Pilot..']
   const [descDisplay,  setDescDisplay] = useState('')
 
   useState(() => {
@@ -23,7 +23,7 @@ function Intro(props) {
     setInterval(() => {
        addString(data[j])
        j++;
-       if(j>2) j=0;
+       if(j>data.length-1) j=0;
     },4000)
   }, [])
 
