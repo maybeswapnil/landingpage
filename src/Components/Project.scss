@@ -5,6 +5,7 @@
   padding: 0;
   --font-color: black;
   --font-color-hover: #ffe54c;
+  --color-hover: #99861b;
   --background-color: white;
   --font-style: 'Source Sans Pro', sans-serif;
 }
@@ -17,15 +18,18 @@
     padding: 2vmin;
     border: 2px dashed var(--font-color-hover);
     transition-duration: 0.3s;
+    position: relative;
     cursor: pointer;
 }
 
 div.outer { position: relative; height: 44px; }
-div.outer img { position: absolute; right: 0; bottom: 0; }
+div.outer img { position: absolute; right: 18px; bottom: 0; }
 
 .projects:hover {
     box-shadow: rgba(136, 136, 136, 0.3) 0px 1px 30px;
-
+    transition: box-shadow 0.3s ease-in-out;
+    border: 2px dashed var(--color-hover);
+    transition: border 0.3s ease-in-out;
 }
 
 .project-image {

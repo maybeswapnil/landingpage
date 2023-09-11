@@ -4,7 +4,7 @@ import './Project.scss'
 
 function ProjectCard(props) {
     return (
-            <a href={props.key}>
+            <a href={props.url}>
                 <Project
                     url={props.url}
                     index={props.index}

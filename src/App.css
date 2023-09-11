@@ -146,6 +146,13 @@ background-image: linear-gradient(315deg, #6d6d6d 0%, #e7e7e7 60%);
 }
 
 @media only screen and (max-width: 600px) {
+  #github {
+    width: 9vmin;
+  }
+  
+  #github:hover {
+    width: 9vmin;
+  }
   .AppDark {
     font-family: var(--font-style);
     height: 620vh;
