@@ -38,7 +38,7 @@ function ImageForm(props) {
 
     var config = {
         method: 'post',
-        url: 'https://new-api-name.herokuapp.com/portefeuille',
+        url: 'https://ee6d-152-58-41-56.ngrok-free.app/portefeuille',
         headers: { 
             'Content-Type': 'application/json'
         },
