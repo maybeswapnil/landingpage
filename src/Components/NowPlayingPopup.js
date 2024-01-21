@@ -98,7 +98,7 @@ function NowPlayingPopup(props) {
 })
   useEffect(() => {
       setLoading(true)
-        axios('http://ec2-13-235-42-116.ap-south-1.compute.amazonaws.com:8000/spotify/nowplaying').then((data) => {
+        axios('https://52dd-152-58-41-56.ngrok-free.app/spotify/nowplaying').then((data) => {
             setSpotifyData(data.data)
             setLoading(false)
         }).catch(() => {
