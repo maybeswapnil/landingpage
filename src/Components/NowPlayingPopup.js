@@ -98,16 +98,16 @@ function NowPlayingPopup(props) {
 })
   useEffect(() => {
       setLoading(true)
-    let config = {
-      method: 'get',
-      maxBodyLength: Infinity,
-      url: 'https://ee6d-152-58-41-56.ngrok-free.app/spotify/nowplaying',
-      headers: { 
-        'ngrok-skip-browser-warning': '1'
-      }
-    };
+        let config = {
+        method: 'get',
+        maxBodyLength: Infinity,
+        url: 'https://ecfe-2401-4900-1c88-8fff-00-90-b607.ngrok-free.app/spotify/nowplaying',
+        headers: { 
+            'ngrok-skip-browser-warning': '1'
+        }
+        };
 
-        axios.request(config).then((data) => {
+            axios.request(config).then((data) => {
             setSpotifyData(data.data)
             setLoading(false)
         }).catch(() => {
