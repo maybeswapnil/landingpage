@@ -101,7 +101,7 @@ function NowPlayingPopup(props) {
         let config = {
         method: 'get',
         maxBodyLength: Infinity,
-        url: 'https://ecfe-2401-4900-1c88-8fff-00-90-b607.ngrok-free.app/spotify/nowplaying',
+        url: 'https://3ea3-2401-4900-1c88-8fff-00-95-58a0.ngrok-free.app/spotify/nowplaying',
         headers: { 
             'ngrok-skip-browser-warning': '1'
         }
