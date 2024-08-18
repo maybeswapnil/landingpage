@@ -38,7 +38,7 @@ function ImageForm(props) {
 
     var config = {
         method: 'post',
-        url: 'https://186d-2401-4900-1c88-8fff-00-96-5be5.ngrok-free.app/portefeuille',
+        url: 'https://b74f-2401-4900-1c88-8fff-00-99-28d.ngrok-free.app/portefeuille',
         headers: { 
             'Content-Type': 'application/json'
         },
