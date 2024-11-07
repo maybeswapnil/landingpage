@@ -101,7 +101,7 @@ function NowPlayingPopup(props) {
         let config = {
         method: 'get',
         maxBodyLength: Infinity,
-        url: 'https://darling-sincerely-crab.ngrok-free.app/spotify/nowplaying',
+        url: 'https://api-set.onrender.com/spotify/nowplaying',
         headers: { 
             'ngrok-skip-browser-warning': '1'
         }
