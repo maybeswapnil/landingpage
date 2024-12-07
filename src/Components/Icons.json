@@ -1,5 +1,9 @@
 [
     {
+        "src": "https://cdn.worldvectorlogo.com/logos/golang-1.svg",
+        "name": "Golang"
+    },
+    {
         "src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
         "name": "Express"
     },
@@ -8,8 +12,32 @@
         "name": "NodeJS"
     },
     {
-        "src": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-        "name": "Postman"
+        "src": "https://logosandtypes.com/wp-content/uploads/2020/07/kafka.png",
+        "name": "Kafka"
+    },
+    {
+        "src": "https://cdn.worldvectorlogo.com/logos/rabbitmq.svg",
+        "name": "RabbitMQ"
+    },
+    {
+        "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        "name": "Javascript"
+    },
+    {
+        "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+        "name": "npm"
+    },
+    {
+        "src": "https://cdn.worldvectorlogo.com/logos/aws-lambda.svg",
+        "name": "AWS Lambda"
+    },
+    {
+        "src": "https://cdn.worldvectorlogo.com/logos/aws-elastic-beanstalk-1.svg",
+        "name": "AWS Event Bridge"
+    },
+    {
+        "src": "https://cdn.worldvectorlogo.com/logos/mysql-logo-pure.svg",
+        "name": "MySQl"
     },
     {
         "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -32,10 +60,6 @@
         "name": "Sass"
     },
     {
-        "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        "name": "Javascript"
-    },
-    {
         "src": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
         "name": "Tailwind CSS"
     },
@@ -44,39 +68,15 @@
         "name": "React"
     },
     {
-        "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg",
-        "name": "MySQl"
-    },
-    {
         "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg",
         "name": "Mongo DB"
-    },
-    {
-        "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg",
-        "name": "Heroku"
     },
     {
         "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
         "name": "Git"
     },
     {
-        "src": "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/ruby/ruby.png",
-        "name": "Ruby on Rails"
-    },
-    {
         "src": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ip7ork2m951siwgpkety.png",
         "name": "AWS S3"
-    },
-    {
-        "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
-        "name": "npm"
-    },
-    {
-        "src": "https://cdn.worldvectorlogo.com/logos/aws-lambda.svg",
-        "name": "AWS Lambda"
-    },
-    {
-        "src": "https://www.thelambdablog.com/img/eventbridge-logo.png",
-        "name": "AWS Event Bridge"
     }
 ]
